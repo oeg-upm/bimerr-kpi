@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://bimerr.iot.linkeddata.es/def/key-performance-indicator#"
+     xml:base="https://bimerr.iot.linkeddata.es/def/key-performance-indicator"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://bimerr.iot.linkeddata.es/def/key-performance-indicator#">
+        <terms:creator>http://www.oeg-upm.net/</terms:creator>
+        <rdfs:comment xml:lang="en">This ontology aims to model the Key Performance Indicator domain.</rdfs:comment>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#category -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#category">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#hasKPI -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#hasKPI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#hasScenario -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#hasScenario">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#address -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#address">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#changeDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#changeDate">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment xml:lang="en">The most recent editing date of a project .</rdfs:comment>
+        <rdfs:label xml:lang="en">change date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#comment -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#comment">
+        <rdfs:label xml:lang="en">comment</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#coordinates -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#coordinates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">coordinates</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#identifier">
+        <rdfs:label xml:lang="en">identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#kpiValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#kpiValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">KPI value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#name">
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#unit -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#unit">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Comfort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Economic"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Energy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Sustainability"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label xml:lang="en">KPI Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Kpi -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Kpi">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#category"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#hasScenario"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#Scenario"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#comment"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#identifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#kpiValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#unit"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Key Performance Indicator</rdfs:comment>
+        <rdfs:label xml:lang="en">KPI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Project -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Project">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#hasKPI"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#Kpi"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#address"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#changeDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#coordinates"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#identifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Scenario -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Scenario">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#identifier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Scenario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Comfort -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Comfort">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Economic -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Economic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Energy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Energy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/serge30/bimerr/kpi#Sustainability -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Sustainability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/serge30/bimerr/kpi#KPICategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Comfort"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Economic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Energy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/serge30/bimerr/kpi#Sustainability"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+
