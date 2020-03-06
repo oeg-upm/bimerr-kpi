@@ -2,7 +2,9 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <..\index-en.html> a prov:Entity;
-	 prov:wasAttributedTo <http://www.oeg-upm.net/>;
-	 dc:creator <http://www.oeg-upm.net/>;
+	 dc:title "Key Performance Indicator ontology";
+	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
+:agent0 a prov:Agent; foaf:name "Serge Chávez Feria,
+María Poveda Villalón".
