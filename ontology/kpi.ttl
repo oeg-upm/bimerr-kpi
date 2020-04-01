@@ -1,6 +1,6 @@
-@prefix : <https://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
+@prefix : <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
 @prefix dc: <http://purl.org/dc/elements/1.1> .
-@prefix kpi: <https://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
+@prefix kpi: <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -11,18 +11,18 @@
 @prefix saref: <https://w3id.org/saref#> .
 @prefix s4city: <https://w3id.org/def/saref4city#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
+@base <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
 
-<https://bimerr.iot.linkeddata.es/def/key-performance-indicator#> rdf:type owl:Ontology ;
-                                                                   <http://purl.org/dc/elements/1.1/created> "2020-02-01"@en ;
-                                                                   <http://purl.org/dc/elements/1.1/creator> "Serge Chávez Feria" ;
-                                                                   <http://purl.org/dc/elements/1.1/description> "The Key Performance Indicator module aims to model the metrics defined at the beginning of building renovation activities to monitor the conformance with typical requirements related to energy efficient buildings."@en ;
-                                                                   <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
-                                                                   <http://purl.org/dc/elements/1.1/title> "Key Performance Indicator ontology"@en ;
-                                                                   dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
-                                                                   vann:preferredNamespacePrefix "kpi"@en ;
-                                                                   vann:preferredNamespaceUri <https://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
-                                                                   owl:versionInfo "0.0.2" .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> rdf:type owl:Ontology ;
+                                                                  <http://purl.org/dc/elements/1.1/created> "2020-02-01"@en ;
+                                                                  <http://purl.org/dc/elements/1.1/creator> "Serge Chávez Feria" ;
+                                                                  <http://purl.org/dc/elements/1.1/description> "The Key Performance Indicator module aims to model the metrics defined at the beginning of building renovation activities to monitor the conformance with typical requirements related to energy efficient buildings."@en ;
+                                                                  <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
+                                                                  <http://purl.org/dc/elements/1.1/title> "Key Performance Indicator ontology"@en ;
+                                                                  dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                                                  vann:preferredNamespacePrefix "kpi"@en ;
+                                                                  vann:preferredNamespaceUri <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
+                                                                  owl:versionInfo "0.0.2" .
 
 #################################################################
 #    Annotation properties
@@ -68,15 +68,15 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject
 kpi:hasProject rdf:type owl:ObjectProperty .
 
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario
 kpi:hasScenario rdf:type owl:ObjectProperty .
 
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject
 kpi:relatedToProject rdf:type owl:ObjectProperty .
 
 
@@ -88,28 +88,28 @@ s4city:quantifiesKPI rdf:type owl:ObjectProperty .
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/serge30/bimerr/kpi#address
-<http://www.semanticweb.org/serge30/bimerr/kpi#address> rdf:type owl:DatatypeProperty ,
-                                                                 owl:FunctionalProperty ;
-                                                        rdfs:label "address"@en .
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address
+kpi:address rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:label "address"@en .
 
 
-###  http://www.semanticweb.org/serge30/bimerr/kpi#changeDate
-<http://www.semanticweb.org/serge30/bimerr/kpi#changeDate> rdf:type owl:DatatypeProperty ,
-                                                                    owl:FunctionalProperty ;
-                                                           rdfs:comment "The most recent editing date of a project ."@en ;
-                                                           rdfs:label "change date"@en .
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate
+kpi:changeDate rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:comment "The most recent editing date of a project ."@en ;
+               rdfs:label "change date"@en .
 
 
-###  http://www.semanticweb.org/serge30/bimerr/kpi#comment
-<http://www.semanticweb.org/serge30/bimerr/kpi#comment> rdf:type owl:DatatypeProperty ;
-                                                        rdfs:label "comment"@en .
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#comment
+kpi:comment rdf:type owl:DatatypeProperty ;
+            rdfs:label "comment"@en .
 
 
-###  http://www.semanticweb.org/serge30/bimerr/kpi#coordinates
-<http://www.semanticweb.org/serge30/bimerr/kpi#coordinates> rdf:type owl:DatatypeProperty ,
-                                                                     owl:FunctionalProperty ;
-                                                            rdfs:label "coordinates"@en .
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates
+kpi:coordinates rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:label "coordinates"@en .
 
 
 ###  http://www.semanticweb.org/serge30/bimerr/kpi#identifier
@@ -129,118 +129,121 @@ s4city:quantifiesKPI rdf:type owl:ObjectProperty .
 
 
 ###  https://w3id.org/saref#hasDescription
-saref:hasDescription rdf:type owl:DatatypeProperty .
+saref:hasDescription rdf:type owl:DatatypeProperty ;
+                     rdfs:label "has description"@en .
 
 
 ###  https://w3id.org/saref#hasName
-saref:hasName rdf:type owl:DatatypeProperty .
+saref:hasName rdf:type owl:DatatypeProperty ;
+              rdfs:label "has name"@en .
 
 
 ###  https://w3id.org/saref#hasValue
-saref:hasValue rdf:type owl:DatatypeProperty .
+saref:hasValue rdf:type owl:DatatypeProperty ;
+               rdfs:label "has value"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/serge30/bimerr/kpi#Kpi
-<http://www.semanticweb.org/serge30/bimerr/kpi#Kpi> rdf:type owl:Class ;
-                                                    rdfs:subClassOf s4city:KeyPerformanceIndicator ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#comment> ;
-                                                                      owl:someValuesFrom xsd:string
-                                                                    ] ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#identifier> ;
-                                                                      owl:someValuesFrom xsd:string
-                                                                    ] ,
-                                                                    [ rdf:type owl:Restriction ;
-                                                                      owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#unit> ;
-                                                                      owl:someValuesFrom xsd:string
-                                                                    ] ;
-                                                    rdfs:comment "Key Performance Indicator"@en ;
-                                                    rdfs:label "KPI"@en ,
-                                                               "Key Performance Indicator"@en .
-
-
-###  http://www.semanticweb.org/serge30/bimerr/kpi#Project
-<http://www.semanticweb.org/serge30/bimerr/kpi#Project> rdf:type owl:Class ;
-                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#address> ;
-                                                                          owl:someValuesFrom xsd:string
-                                                                        ] ,
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#changeDate> ;
-                                                                          owl:someValuesFrom xsd:dateTime
-                                                                        ] ,
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#coordinates> ;
-                                                                          owl:someValuesFrom xsd:string
-                                                                        ] ,
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#identifier> ;
-                                                                          owl:someValuesFrom xsd:string
-                                                                        ] ,
-                                                                        [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#name> ;
-                                                                          owl:someValuesFrom xsd:string
-                                                                        ] ;
-                                                        rdfs:label "Project"@en .
-
-
-###  http://www.semanticweb.org/serge30/bimerr/kpi#Scenario
-<http://www.semanticweb.org/serge30/bimerr/kpi#Scenario> rdf:type owl:Class ;
-                                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty kpi:relatedToProject ;
-                                                                           owl:someValuesFrom <http://www.semanticweb.org/serge30/bimerr/kpi#Project>
-                                                                         ] ,
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#identifier> ;
-                                                                           owl:someValuesFrom xsd:string
-                                                                         ] ,
-                                                                         [ rdf:type owl:Restriction ;
-                                                                           owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#name> ;
-                                                                           owl:someValuesFrom xsd:string
-                                                                         ] ;
-                                                         rdfs:label "Scenario"@en .
-
-
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#Comfort
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Comfort
 kpi:Comfort rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.semanticweb.org/serge30/bimerr/kpi#Kpi> ;
+            rdfs:subClassOf kpi:Kpi ;
             rdfs:label "Comfort"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#Economic
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Economic
 kpi:Economic rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.semanticweb.org/serge30/bimerr/kpi#Kpi> ;
+             rdfs:subClassOf kpi:Kpi ;
              rdfs:label "Economic"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#Energy
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Energy
 kpi:Energy rdf:type owl:Class ;
-           rdfs:subClassOf <http://www.semanticweb.org/serge30/bimerr/kpi#Kpi> ;
+           rdfs:subClassOf kpi:Kpi ;
            rdfs:label "Energy"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue
 kpi:KPIValue rdf:type owl:Class ;
              rdfs:subClassOf s4city:KeyPerformanceIndicatorAssessment ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty kpi:hasProject ;
-                               owl:someValuesFrom <http://www.semanticweb.org/serge30/bimerr/kpi#Project>
+                               owl:someValuesFrom kpi:Project
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty kpi:hasScenario ;
-                               owl:someValuesFrom <http://www.semanticweb.org/serge30/bimerr/kpi#Scenario>
+                               owl:someValuesFrom kpi:Scenario
                              ] ;
              rdfs:label "Key Performance Indicator Value"@en .
 
 
-###  https://bimerr.iot.linkeddata.es/def/key-performance-indicator#Sustainability
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi
+kpi:Kpi rdf:type owl:Class ;
+        rdfs:subClassOf s4city:KeyPerformanceIndicator ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty kpi:comment ;
+                          owl:someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#identifier> ;
+                          owl:someValuesFrom xsd:string
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#unit> ;
+                          owl:someValuesFrom xsd:string
+                        ] ;
+        rdfs:comment "Key Performance Indicator"@en ;
+        rdfs:label "KPI"@en ,
+                   "Key Performance Indicator"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project
+kpi:Project rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty kpi:address ;
+                              owl:someValuesFrom xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty kpi:changeDate ;
+                              owl:someValuesFrom xsd:dateTime
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty kpi:coordinates ;
+                              owl:someValuesFrom xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#identifier> ;
+                              owl:someValuesFrom xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#name> ;
+                              owl:someValuesFrom xsd:string
+                            ] ;
+            rdfs:label "Project"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario
+kpi:Scenario rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty kpi:relatedToProject ;
+                               owl:someValuesFrom kpi:Project
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#identifier> ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty <http://www.semanticweb.org/serge30/bimerr/kpi#name> ;
+                               owl:someValuesFrom xsd:string
+                             ] ;
+             rdfs:label "Scenario"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Sustainability
 kpi:Sustainability rdf:type owl:Class ;
-                   rdfs:subClassOf <http://www.semanticweb.org/serge30/bimerr/kpi#Kpi> ;
+                   rdfs:subClassOf kpi:Kpi ;
                    rdfs:label "Sustainability"@en .
 
 
