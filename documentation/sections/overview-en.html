@@ -4,6 +4,12 @@ This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
    <li>
+      <a href="#CalculatedValue"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue">
+         <span>Calculated value</span>
+      </a>
+   </li>
+   <li>
       <a href="#ComfortKPI"
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI">Comfort KPI</a>
    </li>
@@ -14,6 +20,16 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#EnergyKPI"
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI">Energy KPI</a>
+   </li>
+   <li>
+      <a href="#EstimatedValue"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue">
+         <span>Estimated value</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Goal"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Instant</a>
@@ -50,19 +66,40 @@ This ontology has the following classes and properties.</span>
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario">Scenario</a>
    </li>
    <li>
+      <a href="#SimulatedValue"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">
+         <span>Simulated value</span>
+      </a>
+   </li>
+   <li>
       <a href="#SustainabilityKPI"
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI">Sustainability KPI</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2006/time#TemporalDuration" title="http://www.w3.org/2006/time#TemporalDuration">Temporal duration</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">Temporal entity</a>
    </li>
    <li>
+      <a href="#TimeKPI"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI">Time KPI</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of measure</a>
+   </li>
+   <li>
+      <a href="#ValueType"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType">Value type</a>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
       <a href="#https://w3id.org/def/saref4city#hasCalculationPeriod"
          title="https://w3id.org/def/saref4city#hasCalculationPeriod">has calculation period</a>
+   </li>
+   <li>
+      <a href="#hasGoal"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal">has goal</a>
    </li>
    <li>
       <a href="#hasProject"
@@ -73,11 +110,15 @@ This ontology has the following classes and properties.</span>
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario">has scenario</a>
    </li>
    <li>
-      <a href="#hasUnit"
-         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasUnit">has unit</a>
+      <a href="#hasValueType"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType">has value type</a>
    </li>
    <li>
       <a href="#https://w3id.org/saref#isMeasuredIn" title="https://w3id.org/saref#isMeasuredIn">is measured in</a>
+   </li>
+   <li>
+      <a href="#monitorIndicator"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator">monitor indicator</a>
    </li>
    <li>
       <a href="#https://w3id.org/def/saref4city#quantifiesKPI" title="https://w3id.org/def/saref4city#quantifiesKPI">quantifies KPI</a>
@@ -99,23 +140,43 @@ This ontology has the following classes and properties.</span>
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate">change date</a>
    </li>
    <li>
-      <a href="#comment"
-         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#comment">comment</a>
-   </li>
-   <li>
       <a href="#coordinates"
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates">coordinates</a>
    </li>
    <li>
-      <a href="#hasValue"
-         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValue">has value</a>
+      <a href="#https://w3id.org/saref#hasValue" title="https://w3id.org/saref#hasValue">has value</a>
    </li>
    <li>
       <a href="#identifier"
          title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier">identifier</a>
    </li>
    <li>
-      <a href="#name"
-         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#name">name</a>
+      <a href="#http://schema.org/maxValue" title="http://schema.org/maxValue">max value</a>
+   </li>
+   <li>
+      <a href="#http://schema.org/minValue" title="http://schema.org/minValue">min value</a>
+   </li>
+   <li>
+      <a href="#tolerance"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance">tolerance</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul class="hlist">
+   <li>
+      <a href="#CalculatedValue"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue">
+         <span>Calculated value</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EstimatedValue"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue">
+         <span>Estimated value</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SimulatedValue"
+         title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">
+         <span>Simulated value</span>
+      </a>
    </li>
 </ul>
