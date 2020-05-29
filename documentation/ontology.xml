@@ -303,15 +303,6 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"/>
-    </owl:Class>
-    
-
-
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI -->
 
 
@@ -341,15 +332,6 @@
         <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"/>
         <rdfs:comment xml:lang="en">KPI metric focused on the energy aspects of a building renovation project.</rdfs:comment>
         <rdfs:label xml:lang="en">Energy KPI</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"/>
     </owl:Class>
     
 
@@ -533,15 +515,6 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"/>
-    </owl:Class>
-    
-
-
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI -->
 
 
@@ -721,27 +694,6 @@
     <owl:NamedIndividual rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">
         <rdf:type rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue">
-        <rdfs:label xml:lang="en">Calculated value</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue">
-        <rdfs:label xml:lang="en">Estimated value</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">
-        <rdfs:label xml:lang="en">Simulated value</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

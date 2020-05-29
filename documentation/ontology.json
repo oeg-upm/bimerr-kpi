@@ -286,14 +286,7 @@
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Calculated value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType" ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -338,14 +331,7 @@
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Estimated value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType" ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -465,14 +451,7 @@
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Simulated value"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType" ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
