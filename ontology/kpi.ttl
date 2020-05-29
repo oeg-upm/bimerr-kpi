@@ -73,33 +73,39 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal
 :hasGoal rdf:type owl:ObjectProperty ;
          rdfs:range :Goal ;
+         rdfs:comment "Link to link a project with a set of goals."@en ;
          rdfs:label "has goal"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject
 :hasProject rdf:type owl:ObjectProperty ;
             rdfs:range :Project ;
+            rdfs:comment "A KPI value is assessed within the context of a project."@en ;
             rdfs:label "has project"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario
 :hasScenario rdf:type owl:ObjectProperty ;
              rdfs:range :Scenario ;
+             rdfs:comment "A KPI value is assessed within the context of a scenario."@en ;
              rdfs:label "has scenario"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType
 :hasValueType rdf:type owl:ObjectProperty ;
+              rdfs:comment "Relationship that links a KPI value to their type, based on the nature of the data used to estimate it."@en ;
               rdfs:label "has value type"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator
 :monitorIndicator rdf:type owl:ObjectProperty ;
+                  rdfs:comment "A goal need to monitor a set of KPI values, to verify its accomplishment."@en ;
                   rdfs:label "monitor indicator"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject
 :relatedToProject rdf:type owl:ObjectProperty ;
+                  rdfs:comment "A renovation scenario is simulated within the context of a project."@en ;
                   rdfs:label "related to project"@en .
 
 
@@ -110,16 +116,19 @@ s4city:hasCalculationPeriod rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/def/saref4city#quantifiesKPI
 s4city:quantifiesKPI rdf:type owl:ObjectProperty ;
+                     rdfs:comment "A KPI value quantifies a specific KPI."@en ;
                      rdfs:label "quantifies KPI"@en .
 
 
 ###  https://w3id.org/def/saref4city#refersToTime
 s4city:refersToTime rdf:type owl:ObjectProperty ;
+                    rdfs:comment "Property to add a time stamp to a KPI value."@en ;
                     rdfs:label "refers to time"@en .
 
 
 ###  https://w3id.org/saref#isMeasuredIn
 saref:isMeasuredIn rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Link a KPI value to a unit of measure."@en ;
                    rdfs:label "is measured in"@en .
 
 
@@ -129,6 +138,7 @@ saref:isMeasuredIn rdf:type owl:ObjectProperty ;
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address
 :address rdf:type owl:DatatypeProperty ;
+         rdfs:comment "Address of a project."@en ;
          rdfs:label "address"@en .
 
 
@@ -152,21 +162,25 @@ saref:isMeasuredIn rdf:type owl:ObjectProperty ;
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance
 :tolerance rdf:type owl:DatatypeProperty ;
            rdfs:domain :KPIValue ;
+           rdfs:comment "Tolerance error in the value of a KPI."@en ;
            rdfs:label "tolerance"@en .
 
 
 ###  http://schema.org/maxValue
 <http://schema.org/maxValue> rdf:type owl:DatatypeProperty ;
+                             rdfs:comment "Upper limit to define a KPI Value."@en ;
                              rdfs:label "max value"@en .
 
 
 ###  http://schema.org/minValue
 <http://schema.org/minValue> rdf:type owl:DatatypeProperty ;
+                             rdfs:comment "Lower limit to define a KPI Value."@en ;
                              rdfs:label "min value"@en .
 
 
 ###  https://w3id.org/saref#hasValue
 saref:hasValue rdf:type owl:DatatypeProperty ;
+               rdfs:comment "Numeric quantity of a KPI value."@en ;
                rdfs:label "has value"@en .
 
 
@@ -337,6 +351,7 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 ###  http://www.w3.org/2006/time#Instant
 time:Instant rdf:type owl:Class ;
              rdfs:subClassOf time:TemporalEntity ;
+             rdfs:comment "A temporal entity with zero extent or duration."@en ;
              rdfs:isDefinedBy time: ;
              rdfs:label "Instant"@en .
 
@@ -344,12 +359,14 @@ time:Instant rdf:type owl:Class ;
 ###  http://www.w3.org/2006/time#Interval
 time:Interval rdf:type owl:Class ;
               rdfs:subClassOf time:TemporalEntity ;
+              rdfs:comment "A temporal entity with an extent or duration."@en ;
               rdfs:isDefinedBy time: ;
               rdfs:label "Interval"@en .
 
 
 ###  http://www.w3.org/2006/time#TemporalDuration
 time:TemporalDuration rdf:type owl:Class ;
+                      rdfs:comment "Time extent; duration of a time interval separate from its particular start position."@en ;
                       rdfs:label "Temporal duration"@en .
 
 

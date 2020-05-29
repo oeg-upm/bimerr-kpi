@@ -57,28 +57,34 @@
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal> <http://www.w3.org/2000/01/rdf-schema#comment> "Link to link a project with a set of goals."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal> <http://www.w3.org/2000/01/rdf-schema#label> "has goal"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A KPI value is assessed within the context of a project."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject> <http://www.w3.org/2000/01/rdf-schema#label> "has project"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/2000/01/rdf-schema#comment> "A KPI value is assessed within the context of a scenario."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/2000/01/rdf-schema#label> "has scenario"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship that links a KPI value to their type, based on the nature of the data used to estimate it."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType> <http://www.w3.org/2000/01/rdf-schema#label> "has value type"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator> <http://www.w3.org/2000/01/rdf-schema#comment> "A goal need to monitor a set of KPI values, to verify its accomplishment."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "monitor indicator"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject> <http://www.w3.org/2000/01/rdf-schema#comment> "A renovation scenario is simulated within the context of a project."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject> <http://www.w3.org/2000/01/rdf-schema#label> "related to project"@en .
 # 
 # https://w3id.org/def/saref4city#hasCalculationPeriod
@@ -87,14 +93,17 @@
 # 
 # https://w3id.org/def/saref4city#quantifiesKPI
 <https://w3id.org/def/saref4city#quantifiesKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/saref4city#quantifiesKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "A KPI value quantifies a specific KPI."@en .
 <https://w3id.org/def/saref4city#quantifiesKPI> <http://www.w3.org/2000/01/rdf-schema#label> "quantifies KPI"@en .
 # 
 # https://w3id.org/def/saref4city#refersToTime
 <https://w3id.org/def/saref4city#refersToTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/saref4city#refersToTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to add a time stamp to a KPI value."@en .
 <https://w3id.org/def/saref4city#refersToTime> <http://www.w3.org/2000/01/rdf-schema#label> "refers to time"@en .
 # 
 # https://w3id.org/saref#isMeasuredIn
 <https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Link a KPI value to a unit of measure."@en .
 <https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in"@en .
 # 
 # 
@@ -108,6 +117,7 @@
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address> <http://www.w3.org/2000/01/rdf-schema#comment> "Address of a project."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate
@@ -127,18 +137,22 @@
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance> <http://www.w3.org/2000/01/rdf-schema#comment> "Tolerance error in the value of a KPI."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance> <http://www.w3.org/2000/01/rdf-schema#label> "tolerance"@en .
 # 
 # http://schema.org/maxValue
 <http://schema.org/maxValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/maxValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Upper limit to define a KPI Value."@en .
 <http://schema.org/maxValue> <http://www.w3.org/2000/01/rdf-schema#label> "max value"@en .
 # 
 # http://schema.org/minValue
 <http://schema.org/minValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/minValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Lower limit to define a KPI Value."@en .
 <http://schema.org/minValue> <http://www.w3.org/2000/01/rdf-schema#label> "min value"@en .
 # 
 # https://w3id.org/saref#hasValue
 <https://w3id.org/saref#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Numeric quantity of a KPI value."@en .
 <https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value"@en .
 # 
 # 
@@ -301,17 +315,20 @@ _:genid18 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 # http://www.w3.org/2006/time#Instant
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with zero extent or duration."@en .
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#label> "Instant"@en .
 # 
 # http://www.w3.org/2006/time#Interval
 <http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal entity with an extent or duration."@en .
 <http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/time#> .
 <http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#label> "Interval"@en .
 # 
 # http://www.w3.org/2006/time#TemporalDuration
 <http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "Time extent; duration of a time interval separate from its particular start position."@en .
 <http://www.w3.org/2006/time#TemporalDuration> <http://www.w3.org/2000/01/rdf-schema#label> "Temporal duration"@en .
 # 
 # http://www.w3.org/2006/time#TemporalEntity

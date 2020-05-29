@@ -494,6 +494,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Address of a project."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "address"
@@ -519,6 +523,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Link to link a project with a set of goals."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has goal"
@@ -529,6 +537,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A KPI value is assessed within the context of a project."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has project"
@@ -539,6 +551,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A KPI value is assessed within the context of a scenario."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has scenario"
@@ -549,6 +565,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relationship that links a KPI value to their type, based on the nature of the data used to estimate it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has value type"
@@ -566,6 +586,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A goal need to monitor a set of KPI values, to verify its accomplishment."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "monitor indicator"
@@ -573,6 +597,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A renovation scenario is simulated within the context of a project."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "related to project"
@@ -580,6 +608,10 @@
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Tolerance error in the value of a KPI."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"
   } ],
@@ -617,6 +649,10 @@
 }, {
   "@id" : "http://schema.org/maxValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Upper limit to define a KPI Value."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "max value"
@@ -624,6 +660,10 @@
 }, {
   "@id" : "http://schema.org/minValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Lower limit to define a KPI Value."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "min value"
@@ -631,6 +671,10 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#Instant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with zero extent or duration."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.w3.org/2006/time#"
   } ],
@@ -644,6 +688,10 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#Interval",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal entity with an extent or duration."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "http://www.w3.org/2006/time#"
   } ],
@@ -657,6 +705,10 @@
 }, {
   "@id" : "http://www.w3.org/2006/time#TemporalDuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Time extent; duration of a time interval separate from its particular start position."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Temporal duration"
@@ -727,6 +779,10 @@
 }, {
   "@id" : "https://w3id.org/def/saref4city#quantifiesKPI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A KPI value quantifies a specific KPI."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "quantifies KPI"
@@ -734,6 +790,10 @@
 }, {
   "@id" : "https://w3id.org/def/saref4city#refersToTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Property to add a time stamp to a KPI value."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "refers to time"
@@ -755,6 +815,10 @@
 }, {
   "@id" : "https://w3id.org/saref#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Numeric quantity of a KPI value."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has value"
@@ -762,6 +826,10 @@
 }, {
   "@id" : "https://w3id.org/saref#isMeasuredIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Link a KPI value to a unit of measure."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is measured in"
