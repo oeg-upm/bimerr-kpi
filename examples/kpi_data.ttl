@@ -1,0 +1,217 @@
+@prefix kpi: <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
+@prefix data: <http://bimerr.iot.linkeddata.es/def/key-performance-indicator/data#> .
+@prefix s4city: <https://w3id.org/def/saref4city#> .
+@prefix saref: <https://saref.etsi.org/core/> .
+@prefix schema: <http://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+@base <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
+
+data:EC1BimerrKpi rdf:type kpi:EconomicKPI ;
+	kpi:identifier "EC1"^^xsd:string ;
+	rdfs:label "Initial investment costs"@en ;
+	rdfs:comment "ic	price times reference unit of renovation option(e.g., 100 EUR per m² 20cm EPS wall insulation)"@en .
+	
+data:EC2BimerrKpi rdf:type kpi:EconomicKPI ;
+	kpi:identifier "EC2"^^xsd:string ;
+	rdfs:label "Return on Investment - ROI"@en ;
+	rdfs:comment "the sum of material and labor costs divided by energy cost savings due to renovation measures"@en .
+
+data:EC3BimerrKpi rdf:type kpi:EconomicKPI ;
+	kpi:identifier "EC3"^^xsd:string ;
+	rdfs:label "Additional investment costs"@en ;
+	rdfs:comment "sum of material and labor costs for renewing conducted renovation measures after their life time within the period under consideration in Euro, 
+				dependent on the period under consideration"@en .
+				
+data:EC4BimerrKpi rdf:type kpi:EconomicKPI ;
+	kpi:identifier "EC4"^^xsd:string ;
+	rdfs:label "Energy costs"@en ;
+	rdfs:comment "energy consumption of each energy carrier times price per energy 
+				unit"@en .
+				
+data:EN1BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN1"^^xsd:string ;
+	rdfs:label "Total primary energy consumption"@en ;
+	rdfs:comment "Primary energy consumption refers to the direct use at the source, or supply to users without 
+				transformation, of crude energy, that is, energy that has not been subjected to any conversion or 
+				transformation process."@en .
+				
+data:EN2BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN2"^^xsd:string ;
+	rdfs:label "PENRT Primary energy non-renewable total"@en .
+
+data:EN3BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN3"^^xsd:string ;
+	rdfs:label "Electric energy consumption"@en ;
+	rdfs:comment "the building's total electric energy consumed for the operation of HVAC systems, lighting 
+				and appliances"@en .
+				
+data:EN4BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN4"^^xsd:string ;
+	rdfs:label "Natural gas energy consumption"@en ;
+	rdfs:comment "the building's total natural gas energy consumed for the operation of HVAC systems 
+				and appliances"@en .
+				
+data:EN5BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN5"^^xsd:string ;
+	rdfs:label "District heating energy consumption"@en ;
+	rdfs:comment "the building's total district heating energy consumed for the operation of HVAC systems and domestic 
+				hot water equipment"@en .
+				
+data:EN6BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN6"^^xsd:string ;
+	rdfs:label "Other fuel types"@en ;
+	rdfs:comment "e.g. diesel, biomass energy consumption"@en .
+	
+data:EN7BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN7"^^xsd:string ;
+	rdfs:label "Peak heating load"@en ;
+	rdfs:comment "maximum/peak value of heating profile"@en .
+	
+data:EN8BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN8"^^xsd:string ;
+	rdfs:label "Heating load profile"@en ;
+	rdfs:comment "the heating load profile for a specific period of time in Watts"@en .
+	
+data:EN9BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN9"^^xsd:string ;
+	rdfs:label "Peak cooling load"@en ;
+	rdfs:comment "maximum/peak value of cooling profile"@en .
+	
+data:EN10BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN10"^^xsd:string ;
+	rdfs:label "Cooling load profile"@en ;
+	rdfs:comment "the cooling power profile for a specific period of time in Watts"@en .
+	
+data:EN11BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN11"^^xsd:string ;
+	rdfs:label "Heating energy demand"@en .
+	
+data:EN12BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN12"^^xsd:string ;
+	rdfs:label "Cooling energy demand"@en .
+	
+data:EN13BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN13"^^xsd:string ;
+	rdfs:label "Electricity load profile"@en ;
+	rdfs:comment "maximum/peak value of electricity profile"@en .
+	
+data:EN14BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN14"^^xsd:string ;
+	rdfs:label "Peak electricity load"@en ;
+	rdfs:comment "the electricity power profile for a specific period of time in Watts"@en .
+	
+data:EN15BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN15"^^xsd:string ;
+	rdfs:label "PV electric energy generation"@en ;
+	rdfs:comment "the electric energy generated by photovoltaic panels installed in the building"@en .
+
+data:EN16BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN16"^^xsd:string ;
+	rdfs:label "PV electric energy generation"@en ;
+	rdfs:comment "the PV electric energy generation load profile for a specific period of time in Watt"@en .
+
+data:EN17BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN17"^^xsd:string ;
+	rdfs:label "Solar thermal energy generation"@en ;
+	rdfs:comment "the thermal energy generated by solar thermal panels installed in the building"@en .
+
+data:EN18BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN18"^^xsd:string ;
+	rdfs:label "Electrical energy generated in the district and used onsite"@en .	
+
+data:EN19BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN19"^^xsd:string ;
+	rdfs:label "Energy generated on site and exported to the district"@en .	
+
+data:EN20BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN20"^^xsd:string ;
+	rdfs:label "Absolute annual energy savings"@en .
+	
+data:EN21BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN21"^^xsd:string ;
+	rdfs:label "Relative annual energy savings"@en .
+	
+data:EN22BimerrKpi rdf:type kpi:EnergyKPI ;
+	kpi:identifier "EN22"^^xsd:string ;
+	rdfs:label "Reduction of peak energy load"@en .
+	
+data:SU1BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU1"^^xsd:string ;
+	rdfs:label "Environmental cost indicator"@en ;
+	rdfs:comment "Indicator that unites all relevant environmental impacts into a single score of environmental costs, 
+				representing the environmental shadow price of a product or project."@en .
+
+data:SU2BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU2"^^xsd:string ;
+	rdfs:label "GWP100a total global warming potential"@en .
+	
+data:SU3BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU3"^^xsd:string ;
+	rdfs:label "Acidification potential of soil and water (AP)"@en .
+	
+data:SU4BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU4"^^xsd:string ;
+	rdfs:label "Depletion potential of the stratospheric ozone layer (ODP)"@en .
+
+data:SU5BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU5"^^xsd:string ;
+	rdfs:label "Abiotic depletion potential for non fossil resources (ADPE)"@en .
+
+data:SU6BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU6"^^xsd:string ;
+	rdfs:label "Eutrophication potential (EP)"@en .
+	
+data:SU7BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU7"^^xsd:string ;
+	rdfs:label "Abiotic depletion potential for fossil resources (ADPF)"@en .
+
+data:SU8BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU8"^^xsd:string ;
+	rdfs:label "Formation potential of tropospheric ozone (POCP)"@en .
+
+data:SU9BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU9"^^xsd:string ;
+	rdfs:label "CO2 emission rate"@en ;
+	rdfs:comment "energy consumption per carrier per CO2 emissions of the energy carrier"@en .
+		
+data:SU10BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU10"^^xsd:string ;
+	rdfs:label "Water pollution"@en ;
+	rdfs:comment "Indicator of the amount of water required to dilute toxic elements emitted into water or soil"@en .
+
+data:SU11BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU11"^^xsd:string ;
+	rdfs:label "Air pollution"@en ;
+	rdfs:comment "Indicator of the amount of air required to dilute toxic elements emitted into air"@en .
+
+data:SU12BimerrKpi rdf:type kpi:SustainabilityKPI ;
+	kpi:identifier "SU12"^^xsd:string ;
+	rdfs:label "GHG emissions reduction"@en .
+	
+data:CO1BimerrKpi rdf:type kpi:ComfortKPI ;
+	kpi:identifier "CO1"^^xsd:string ;
+	rdfs:label "Thermal comfort (heating)"@en .
+	
+data:CO2BimerrKpi rdf:type kpi:ComfortKPI ;
+	kpi:identifier "CO2"^^xsd:string ;
+	rdfs:label "Thermal comfort (cooling)"@en .
+	
+data:CO3BimerrKpi rdf:type kpi:ComfortKPI ;
+	kpi:identifier "CO3"^^xsd:string ;
+	rdfs:label "Humidity"@en .
+	
+data:CO4BimerrKpi rdf:type kpi:ComfortKPI ;
+	kpi:identifier "CO4"^^xsd:string ;
+	rdfs:label "Indoor air quality"@en .
+	
+data:CO5BimerrKpi rdf:type kpi:ComfortKPI ;
+	kpi:identifier "CO5"^^xsd:string ;
+	rdfs:label "Lighting"@en .
