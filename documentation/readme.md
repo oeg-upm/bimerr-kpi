@@ -5,7 +5,7 @@ The purpose of Widoco is to reuse and integrate existing tools for documentation
 * Automatic annotation in RDF-a of the html produced.
 * Association of a provenance page which includes the history of your vocabulary (W3C PROV-O compliant).
 * Metadata extraction from the ontology plus the means to complete it on the fly when generating your ontology.
-* Guidelines on the main sections that your document should have and how to complete them.
+* Guidelines on the main sections that your document should have and how to complete them..
 
 Widoco will create 3 different folders:
 |
