@@ -11,20 +11,19 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate"
   } ]
 }, {
   "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -34,17 +33,17 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address"
   } ]
 }, {
   "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -54,10 +53,20 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate"
   } ]
 }, {
   "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"
+  } ]
+}, {
+  "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"
@@ -66,7 +75,7 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid17",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"
@@ -79,7 +88,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid18",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"
@@ -88,7 +97,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid18",
+  "@id" : "_:genid19",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#cardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -98,7 +107,17 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"
   } ]
 }, {
-  "@id" : "_:genid19",
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/saref#hasValue"
+  } ]
+}, {
+  "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
     "@id" : "http://www.w3.org/2006/time#TemporalDuration"
@@ -107,7 +126,53 @@
     "@id" : "https://w3id.org/def/saref4city#hasCalculationPeriod"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/saref4city#hasCalculationPeriod"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicator"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/saref4city#quantifiesKPI"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/saref4city#refersToTime"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://w3id.org/saref#UnitOfMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/saref#isMeasuredIn"
+  } ]
+}, {
+  "@id" : "_:genid25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/saref#hasValue"
+  } ]
+}, {
+  "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -120,72 +185,13 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator"
   } ]
 }, {
-  "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4city#hasCalculationPeriod"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicator"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4city#quantifiesKPI"
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4city#refersToTime"
-  } ]
-}, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://w3id.org/saref#UnitOfMeasure"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/saref#isMeasuredIn"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/saref#hasValue"
-  } ]
-}, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid4",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -193,6 +199,19 @@
   } ]
 }, {
   "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onDataRange" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -205,7 +224,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -218,7 +237,7 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal"
   } ]
 }, {
-  "@id" : "_:genid7",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address"
@@ -227,22 +246,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid8",
+  "@id" : "_:genid9",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#",
@@ -281,9 +291,6 @@
     "@value" : "0.0.3"
   } ]
 }, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -296,6 +303,8 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI",
@@ -340,9 +349,6 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"
   } ]
 }, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -354,21 +360,7 @@
     "@value" : "Goal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid2"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIUnit",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Describes the units of measure commonly used to quantify building renovation KPI's."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "KPI unit"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#UnitOfMeasure"
+    "@id" : "_:genid3"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue",
@@ -384,9 +376,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicatorAssessment"
   }, {
-    "@id" : "_:genid3"
-  }, {
     "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi",
@@ -405,7 +397,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicator"
   }, {
-    "@id" : "_:genid5"
+    "@id" : "_:genid6"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project",
@@ -419,8 +411,6 @@
     "@value" : "Project"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid6"
-  }, {
     "@id" : "_:genid7"
   }, {
     "@id" : "_:genid8"
@@ -436,6 +426,8 @@
     "@id" : "_:genid13"
   }, {
     "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario",
@@ -449,17 +441,14 @@
     "@value" : "Scenario"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid15"
-  }, {
     "@id" : "_:genid16"
   }, {
     "@id" : "_:genid17"
   }, {
     "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
   } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -498,6 +487,34 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "address"
+  } ]
+}, {
+  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A KPI value is assessed within the context of a project."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "assessed under project"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"
+  } ]
+}, {
+  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A KPI value is assessed within the context of a scenario."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "assessed under scenario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter",
@@ -539,50 +556,11 @@
     "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal"
   } ]
 }, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A KPI value is assessed within the context of a project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has project"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A KPI value is assessed within the context of a scenario."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has scenario"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"
-  } ]
-}, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has sub-goal"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Relationship that links a KPI value to their type, based on the nature of the data used to estimate it."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has value type"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier",
@@ -593,6 +571,28 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#maxValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Upper limit to define a KPI Value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "max value"
+  } ]
+}, {
+  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#minValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Lower limit to define a KPI Value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "min value"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator",
@@ -657,28 +657,6 @@
 }, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://schema.org/maxValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Upper limit to define a KPI Value."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "max value"
-  } ]
-}, {
-  "@id" : "http://schema.org/minValue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Lower limit to define a KPI Value."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "min value"
-  } ]
 }, {
   "@id" : "http://www.w3.org/2006/time#Instant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -753,9 +731,9 @@
     "@value" : "Key Performance Indicator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid19"
-  }, {
     "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
   } ]
 }, {
   "@id" : "https://w3id.org/def/saref4city#KeyPerformanceIndicatorAssessment",
@@ -772,13 +750,13 @@
     "@value" : "Key Performance Indicator Assessment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid21"
-  }, {
     "@id" : "_:genid22"
   }, {
     "@id" : "_:genid23"
   }, {
     "@id" : "_:genid24"
+  }, {
+    "@id" : "_:genid25"
   } ]
 }, {
   "@id" : "https://w3id.org/def/saref4city#hasCalculationPeriod",

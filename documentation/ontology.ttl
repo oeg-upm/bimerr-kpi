@@ -62,6 +62,20 @@
 #    Object Properties
 #################################################################
 
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject
+:assessedUnderProject rdf:type owl:ObjectProperty ;
+                      rdfs:range :Project ;
+                      rdfs:comment "A KPI value is assessed within the context of a project."@en ;
+                      rdfs:label "assessed under project"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario
+:assessedUnderScenario rdf:type owl:ObjectProperty ;
+                       rdfs:range :Scenario ;
+                       rdfs:comment "A KPI value is assessed within the context of a scenario."@en ;
+                       rdfs:label "assessed under scenario"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter
 :basedOnParameter rdf:type owl:ObjectProperty ;
                   rdfs:label "based on parameter"@en .
@@ -74,29 +88,9 @@
          rdfs:label "has goal"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject
-:hasProject rdf:type owl:ObjectProperty ;
-            rdfs:range :Project ;
-            rdfs:comment "A KPI value is assessed within the context of a project."@en ;
-            rdfs:label "has project"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario
-:hasScenario rdf:type owl:ObjectProperty ;
-             rdfs:range :Scenario ;
-             rdfs:comment "A KPI value is assessed within the context of a scenario."@en ;
-             rdfs:label "has scenario"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal
 :hasSubGoal rdf:type owl:ObjectProperty ;
             rdfs:label "has sub-goal"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType
-:hasValueType rdf:type owl:ObjectProperty ;
-              rdfs:comment "Relationship that links a KPI value to their type, based on the nature of the data used to estimate it."@en ;
-              rdfs:label "has value type"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator
@@ -161,23 +155,23 @@
             rdfs:label "identifier"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#maxValue
+:maxValue rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Upper limit to define a KPI Value."@en ;
+          rdfs:label "max value"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#minValue
+:minValue rdf:type owl:DatatypeProperty ;
+          rdfs:comment "Lower limit to define a KPI Value."@en ;
+          rdfs:label "min value"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance
 :tolerance rdf:type owl:DatatypeProperty ;
            rdfs:domain :KPIValue ;
            rdfs:comment "Tolerance error in the value of a KPI."@en ;
            rdfs:label "tolerance"@en .
-
-
-###  http://schema.org/maxValue
-<http://schema.org/maxValue> rdf:type owl:DatatypeProperty ;
-                             rdfs:comment "Upper limit to define a KPI Value."@en ;
-                             rdfs:label "max value"@en .
-
-
-###  http://schema.org/minValue
-<http://schema.org/minValue> rdf:type owl:DatatypeProperty ;
-                             rdfs:comment "Lower limit to define a KPI Value."@en ;
-                             rdfs:label "min value"@en .
 
 
 ###  https://w3id.org/saref#hasValue
@@ -195,6 +189,10 @@
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                         owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
                                         owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <https://w3id.org/saref#hasValue> ;
+                                        owl:cardinality "1"^^xsd:nonNegativeInteger
                                       ] ;
                       rdfs:comment "Represent the parameters or variables that take places in the assessment of a KPI."@en ;
                       rdfs:label "Calculation parameter"@en .
@@ -232,23 +230,16 @@
       rdfs:label "Goal"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIUnit
-:KPIUnit rdf:type owl:Class ;
-         rdfs:subClassOf <https://w3id.org/saref#UnitOfMeasure> ;
-         rdfs:comment "Describes the units of measure commonly used to quantify building renovation KPI's."@en ;
-         rdfs:label "KPI unit"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue
 :KPIValue rdf:type owl:Class ;
           rdfs:subClassOf <https://w3id.org/def/saref4city#KeyPerformanceIndicatorAssessment> ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasProject ;
+                            owl:onProperty :assessedUnderProject ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :Project
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasScenario ;
+                            owl:onProperty :assessedUnderScenario ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :Scenario
                           ] ;
@@ -421,22 +412,6 @@
                                        rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended."@en ;
                                        rdfs:isDefinedBy <https://w3id.org/saref#> ;
                                        rdfs:label "Unit of measure"@en .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue
-:CalculatedValue rdf:type owl:NamedIndividual .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue
-:EstimatedValue rdf:type owl:NamedIndividual .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue
-:SimulatedValue rdf:type owl:NamedIndividual .
 
 
 ###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
