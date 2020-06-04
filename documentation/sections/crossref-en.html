@@ -4,6 +4,10 @@ This section provides details for each class and property defined by Key Perform
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
+         <a href="#CalculationParameter"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter">Calculation parameter</a>
+      </li>
+      <li>
          <a href="#ComfortKPI"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI">Comfort KPI</a>
       </li>
@@ -70,11 +74,22 @@ This section provides details for each class and property defined by Key Perform
       <li>
          <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">Unit of measure</a>
       </li>
-      <li>
-         <a href="#ValueType"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType">Value type</a>
-      </li>
    </ul>
+   <div class="entity" id="CalculationParameter">
+      <h3>Calculation parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter</p>
+      <div class="comment">
+         <span class="markdown">Represent the parameters or variables that take places in the assessment of a KPI.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+      </dl>
+   </div>
    <div class="entity" id="ComfortKPI">
       <h3>Comfort KPI<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -472,32 +487,13 @@ This section provides details for each class and property defined by Key Perform
          </dd>
       </dl>
    </div>
-   <div class="entity" id="ValueType">
-      <h3>Value type<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType</p>
-      <div class="comment">
-         <span class="markdown">Represents how the value of KPI is instantiated.</span>
-      </div>
-      <dl class="description">
-         <dt>has members</dt>
-         <dd>
-            <a href="#CalculatedValue"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue">calculated value</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#EstimatedValue"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue">estimated value</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#SimulatedValue"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">simulated value</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
-      </dl>
-   </div>
 </div><div id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
+      <li>
+         <a href="#basedOnParameter"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter">based on parameter</a>
+      </li>
       <li>
          <a href="#https://w3id.org/def/saref4city#hasCalculationPeriod"
             title="https://w3id.org/def/saref4city#hasCalculationPeriod">has calculation period</a>
@@ -513,6 +509,10 @@ This section provides details for each class and property defined by Key Perform
       <li>
          <a href="#hasScenario"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario">has scenario</a>
+      </li>
+      <li>
+         <a href="#hasSubGoal"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal">has sub-goal</a>
       </li>
       <li>
          <a href="#hasValueType"
@@ -536,6 +536,14 @@ This section provides details for each class and property defined by Key Perform
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject">related to project</a>
       </li>
    </ul>
+   <div class="entity" id="basedOnParameter">
+      <h3>based on parameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter</p>
+   </div>
    <div class="entity" id="https://w3id.org/def/saref4city#hasCalculationPeriod">
       <h3>has calculation period<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -606,6 +614,14 @@ This section provides details for each class and property defined by Key Perform
             </dd>
          </dl>
       </div>
+   </div>
+   <div class="entity" id="hasSubGoal">
+      <h3>has sub-goal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal</p>
    </div>
    <div class="entity" id="hasValueType">
       <h3>has value type<sup class="type-op" title="object property">op</sup>
@@ -805,76 +821,6 @@ This section provides details for each class and property defined by Key Perform
             </dd>
          </dl>
       </div>
-   </div>
-</div><div id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#CalculatedValue"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue">
-            <span>calculated value</span>
-         </a>
-      </li>
-      <li>
-         <a href="#EstimatedValue"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue">
-            <span>estimated value</span>
-         </a>
-      </li>
-      <li>
-         <a href="#SimulatedValue"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue">
-            <span>simulated value</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="CalculatedValue">
-      <h3>calculated value<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#ValueType"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType">Value type</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="EstimatedValue">
-      <h3>estimated value<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#ValueType"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType">Value type</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="SimulatedValue">
-      <h3>simulated value<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#ValueType"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType">Value type</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

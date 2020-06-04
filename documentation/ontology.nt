@@ -54,6 +54,10 @@
 # #################################################################
 # 
 # 
+# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter> <http://www.w3.org/2000/01/rdf-schema#label> "based on parameter"@en .
+# 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> .
@@ -71,6 +75,10 @@
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/2000/01/rdf-schema#range> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/2000/01/rdf-schema#comment> "A KPI value is assessed within the context of a scenario."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> <http://www.w3.org/2000/01/rdf-schema#label> "has scenario"@en .
+# 
+# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal> <http://www.w3.org/2000/01/rdf-schema#label> "has sub-goal"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -164,6 +172,15 @@
 # #################################################################
 # 
 # 
+# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Represent the parameters or variables that take places in the assessment of a KPI."@en .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Calculation parameter"@en .
+# 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi> .
@@ -184,11 +201,11 @@
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator> .
-_:genid1 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/2000/01/rdf-schema#comment> "Goals or subgoals describe the objetives to be achieved within the renovation process. For instance: \"Stay within estimated budget\""@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/2000/01/rdf-schema#label> "Goal"@en .
 # 
@@ -201,21 +218,16 @@ _:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.e
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/saref4city#KeyPerformanceIndicatorAssessment> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject> .
-_:genid2 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasProject> .
 _:genid3 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario> .
+_:genid3 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasValueType> .
-_:genid4 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario> .
+_:genid4 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Key performance indicator values calculated for a specific renovation project and scenario."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue> <http://www.w3.org/2000/01/rdf-schema#label> "Key Performance Indicator Value"@en .
 # 
@@ -307,11 +319,6 @@ _:genid18 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/20
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "KPI metric related to temporal metrics for a building renovation project."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI> <http://www.w3.org/2000/01/rdf-schema#label> "Time KPI"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents how the value of KPI is instantiated."@en .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> <http://www.w3.org/2000/01/rdf-schema#label> "Value type"@en .
-# 
 # http://www.w3.org/2006/time#Instant
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
@@ -390,14 +397,11 @@ _:genid24 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EstimatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> .
 # 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SimulatedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ValueType> .
 # 
 # Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
