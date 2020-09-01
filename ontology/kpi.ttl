@@ -11,6 +11,7 @@
 @prefix saref: <https://w3id.org/saref#> .
 @prefix s4city: <https://w3id.org/def/saref4city#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix building: <http://bimerr.iot.linkeddata.es/def/building#> .
 @prefix dbpedia-owl: <http://dbpedia.org/ontology/> .
 @base <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
 
@@ -86,6 +87,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter
 :basedOnParameter rdf:type owl:ObjectProperty ;
+                  rdfs:comment "Links to the parameter used to compute a KPI value."@en ;
                   rdfs:label "based on parameter"@en .
 
 
@@ -98,6 +100,7 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal
 :hasSubGoal rdf:type owl:ObjectProperty ;
+            rdfs:comment "Relationship used to decompose a project goal into more specific sub-goals."@en ;
             rdfs:label "has sub-goal"@en .
 
 
@@ -105,6 +108,12 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 :monitorIndicator rdf:type owl:ObjectProperty ;
                   rdfs:comment "A goal need to monitor a set of KPI values, to verify its accomplishment."@en ;
                   rdfs:label "monitor indicator"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToBuilding
+:relatedToBuilding rdf:type owl:ObjectProperty ;
+                   rdfs:comment "Links to the building the project is about."@en ;
+                   rdfs:label "related to building"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject
@@ -192,6 +201,11 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  http://bimerr.iot.linkeddata.es/def/building#Building
+building:Building rdf:type owl:Class ;
+                  rdfs:label "Building"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter
 :CalculationParameter rdf:type owl:Class ;
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -271,6 +285,10 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project
 :Project rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :relatedToBuilding ;
+                           owl:allValuesFrom building:Building
+                         ] ,
+                         [ rdf:type owl:Restriction ;
                            owl:onProperty :hasGoal ;
                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onClass :Goal
