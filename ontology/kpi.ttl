@@ -157,9 +157,18 @@ saref:isMeasuredIn rdf:type owl:ObjectProperty ;
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate
 :changeDate rdf:type owl:DatatypeProperty ;
-            rdfs:comment "The most recent editing date of a project ."@en ;
+            rdfs:comment "The most recent editing date of a project."@en ;
             rdfs:label "change date"@en .
 
+###  dcterms#created
+dcterms:created rdf:type owl:DatatypeProperty ;
+            rdfs:comment "The date when the project was created."@en ;
+            rdfs:label "creation date"@en .
+
+###  dcterms#ISO3166
+dcterms:created rdf:type owl:DatatypeProperty ;
+            rdfs:comment "The ISO country code where the project is being developed."@en ;
+            rdfs:label "ISO country code"@en .
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates
 :coordinates rdf:type owl:DatatypeProperty ;
@@ -323,6 +332,14 @@ building:Building rdf:type owl:Class ;
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :coordinates ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dcterms:created ;
+                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty dcterms:ISO3166 ;
                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
                          ] ;
          rdfs:comment "A project is a temporary endeavor undertaken to achieve defined objectives (definition taken from DBpedia)."@en ;
