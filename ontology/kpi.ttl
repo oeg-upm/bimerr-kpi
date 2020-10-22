@@ -166,7 +166,7 @@ dcterms:created rdf:type owl:DatatypeProperty ;
             rdfs:label "creation date"@en .
 
 ###  dcterms#ISO3166
-dcterms:created rdf:type owl:DatatypeProperty ;
+dcterms:ISO3166 rdf:type owl:DatatypeProperty ;
             rdfs:comment "The ISO country code where the project is being developed."@en ;
             rdfs:label "ISO country code"@en .
 
