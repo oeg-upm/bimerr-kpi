@@ -99,13 +99,6 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#maxCardinality -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#maxCardinality"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -322,13 +315,21 @@
     
 
 
+    <!-- http://purl.org/dc/terms/ISO3166 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/ISO3166">
+        <rdfs:comment xml:lang="en">The ISO country code where the project is being developed.</rdfs:comment>
+        <rdfs:label xml:lang="en">ISO country code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/created -->
 
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
-        <rdfs:comment xml:lang="en">The ISO country code where the project is being developed.</rdfs:comment>
         <rdfs:comment xml:lang="en">The date when the project was created.</rdfs:comment>
-        <rdfs:label xml:lang="en">ISO country code</rdfs:label>
         <rdfs:label xml:lang="en">creation date</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -485,7 +486,6 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToBuilding"/>
@@ -544,6 +544,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/terms/ISO3166"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -613,13 +619,6 @@
         <rdfs:comment xml:lang="en">KPI metric related to temporal metrics for a building renovation project.</rdfs:comment>
         <rdfs:label xml:lang="en">Time KPI</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
     
 
 
@@ -734,9 +733,6 @@
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/saref#"/>
         <rdfs:label xml:lang="en">Unit of measure</rdfs:label>
     </owl:Class>
-    <rdf:Description>
-        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-    </rdf:Description>
 </rdf:RDF>
 
 
