@@ -16,7 +16,7 @@
                                                                   <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "kpi"@en ;
                                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
-                                                                  owl:versionInfo "0.0.3" .
+                                                                  owl:versionInfo "0.1.2" .
 
 #################################################################
 #    Annotation properties
@@ -59,11 +59,20 @@
 
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject
 :assessedUnderProject rdf:type owl:ObjectProperty ;
+                      rdfs:domain :KPIValue ;
                       rdfs:range :Project ;
                       rdfs:comment "A KPI value is assessed within the context of a project."@en ;
                       rdfs:label "assessed under project"@en .
@@ -71,6 +80,7 @@
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario
 :assessedUnderScenario rdf:type owl:ObjectProperty ;
+                       rdfs:domain :KPIValue ;
                        rdfs:range :Scenario ;
                        rdfs:comment "A KPI value is assessed within the context of a scenario."@en ;
                        rdfs:label "assessed under scenario"@en .
@@ -78,43 +88,62 @@
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter
 :basedOnParameter rdf:type owl:ObjectProperty ;
+                  rdfs:range :PerformanceParameter ;
                   rdfs:comment "Links to the parameter used to compute a KPI value."@en ;
                   rdfs:label "based on parameter"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal
 :hasGoal rdf:type owl:ObjectProperty ;
+         rdfs:domain :Project ;
          rdfs:range :Goal ;
          rdfs:comment "Link to link a project with a set of goals."@en ;
          rdfs:label "has goal"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource
+:hasSource rdf:type owl:ObjectProperty ;
+           rdfs:domain :PerformanceParameter ;
+           rdfs:range :InformationSource ;
+           rdfs:comment "Relates to the information source where the parameter came from."@en ;
+           rdfs:label "has source"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal
 :hasSubGoal rdf:type owl:ObjectProperty ;
+            rdfs:domain :Goal ;
+            rdfs:range :Goal ;
             rdfs:comment "Relationship used to decompose a project goal into more specific sub-goals."@en ;
-            rdfs:label "has sub-goal"@en .
+            rdfs:label "has sub goal"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator
 :monitorIndicator rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Goal ;
+                  rdfs:range :KPIValue ;
                   rdfs:comment "A goal need to monitor a set of KPI values, to verify its accomplishment."@en ;
                   rdfs:label "monitor indicator"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToBuilding
 :relatedToBuilding rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Project ;
+                   rdfs:range <http://bimerr.iot.linkeddata.es/def/building#Building> ;
                    rdfs:comment "Links to the building the project is about."@en ;
                    rdfs:label "related to building"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject
 :relatedToProject rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Scenario ;
+                  rdfs:range :Project ;
                   rdfs:comment "A renovation scenario is simulated within the context of a project."@en ;
                   rdfs:label "related to project"@en .
 
 
 ###  https://w3id.org/def/saref4city#hasCalculationPeriod
 <https://w3id.org/def/saref4city#hasCalculationPeriod> rdf:type owl:ObjectProperty ;
+                                                       rdfs:comment "Indicates the calculation period of a KPI."@en ;
                                                        rdfs:label "has calculation period"@en .
 
 
@@ -142,12 +171,16 @@
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address
 :address rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Project ;
+         rdfs:range xsd:string ;
          rdfs:comment "Address of a project."@en ;
          rdfs:label "address"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate
 :changeDate rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Project ;
+            rdfs:range xsd:date ;
             rdfs:comment "The most recent editing date of a project."@en ;
             rdfs:label "change date"@en .
 
@@ -160,17 +193,20 @@
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier
 :identifier rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:string ;
+            rdfs:comment "Identifier."@en ;
             rdfs:label "identifier"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#maxValue
 :maxValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :KPIValue ;
           rdfs:comment "Upper limit to define a KPI Value."@en ;
           rdfs:label "max value"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#minValue
 :minValue rdf:type owl:DatatypeProperty ;
+          rdfs:domain :KPIValue ;
           rdfs:comment "Lower limit to define a KPI Value."@en ;
           rdfs:label "min value"@en .
 
@@ -184,6 +220,7 @@
 
 ###  http://purl.org/dc/terms/ISO3166
 <http://purl.org/dc/terms/ISO3166> rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :Project ;
                                    rdfs:comment "The ISO country code where the project is being developed."@en ;
                                    rdfs:label "ISO country code"@en .
 
@@ -206,21 +243,8 @@
 
 ###  http://bimerr.iot.linkeddata.es/def/building#Building
 <http://bimerr.iot.linkeddata.es/def/building#Building> rdf:type owl:Class ;
+                                                        rdfs:comment "The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things."@en ;
                                                         rdfs:label "Building"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#CalculationParameter
-:CalculationParameter rdf:type owl:Class ;
-                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                        owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
-                                        owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty <https://w3id.org/saref#hasValue> ;
-                                        owl:cardinality "1"^^xsd:nonNegativeInteger
-                                      ] ;
-                      rdfs:comment "Represent the parameters or variables that take places in the assessment of a KPI."@en ;
-                      rdfs:label "Calculation parameter"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI
@@ -255,6 +279,12 @@
       rdfs:label "Goal"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource
+:InformationSource rdf:type owl:Class ;
+                   rdfs:comment "Represents the sources of information used to estimate the value of a parameter."@en ;
+                   rdfs:label "Information Source"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue
 :KPIValue rdf:type owl:Class ;
           rdfs:subClassOf <https://w3id.org/def/saref4city#KeyPerformanceIndicatorAssessment> ,
@@ -281,8 +311,25 @@
                        owl:onDataRange xsd:string
                      ] ;
      rdfs:comment "Key performance indicators related to building renovation projects"@en ;
-     rdfs:label "KPI"@en ,
-                "Key Performance Indicator"@en .
+     rdfs:label "KPI"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#PerformanceParameter
+:PerformanceParameter rdf:type owl:Class ;
+                      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                        owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
+                                        owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasSource ;
+                                        owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty <https://w3id.org/saref#hasValue> ;
+                                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                                      ] ;
+                      rdfs:comment "Represent the parameters or variables that are used to measure the performance of an specific task, and are useful to compute project KPI's."@en ;
+                      rdfs:label "Performance parameter"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project
