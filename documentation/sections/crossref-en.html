@@ -28,10 +28,6 @@ This section provides details for each class and property defined by Key Perform
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
       </li>
       <li>
-         <a href="#InformationSource"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource">Information source</a>
-      </li>
-      <li>
          <a href="#https://w3id.org/def/saref4city#KeyPerformanceIndicator"
             title="https://w3id.org/def/saref4city#KeyPerformanceIndicator">Key performance indicator</a>
       </li>
@@ -100,6 +96,8 @@ This section provides details for each class and property defined by Key Perform
          <span class="markdown">The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things.</span>
       </div>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
          <dt>is in range of</dt>
          <dd>
             <a href="#relatedToBuilding"
@@ -213,25 +211,6 @@ This section provides details for each class and property defined by Key Perform
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal">has goal</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSubGoal"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal">has sub goal</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="InformationSource">
-      <h3>Information source<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource</p>
-      <div class="comment">
-         <span class="markdown">Represents the sources of information used to estimate the value of a parameter.</span>
-      </div>
-      <dl class="description">
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasSource"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource">has source</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -425,12 +404,6 @@ This section provides details for each class and property defined by Key Perform
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasSource"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource">has source</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#basedOnParameter"
@@ -666,10 +639,6 @@ This section provides details for each class and property defined by Key Perform
       <li>
          <a href="#hasScenario"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario">has scenario</a>
-      </li>
-      <li>
-         <a href="#hasSource"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource">has source</a>
       </li>
       <li>
          <a href="#hasSubGoal"
@@ -935,33 +904,6 @@ This section provides details for each class and property defined by Key Perform
             <dd>
                <a href="#Scenario"
                   title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario">Scenario</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSource">
-      <h3>has source<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource</p>
-      <div class="comment">
-         <span class="markdown">Relates to the information source where the parameter came from.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PerformanceParameter"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#PerformanceParameter">Performance parameter</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#InformationSource"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource">Information source</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

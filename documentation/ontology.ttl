@@ -139,14 +139,6 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "has scenario"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource
-:hasSource rdf:type owl:ObjectProperty ;
-           rdfs:domain :PerformanceParameter ;
-           rdfs:range :InformationSource ;
-           rdfs:comment "Relates to the information source where the parameter came from."@en ;
-           rdfs:label "has source"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal
 :hasSubGoal rdf:type owl:ObjectProperty ;
             rdfs:domain :Goal ;
@@ -357,6 +349,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://bimerr.iot.linkeddata.es/def/building#Building
 <http://bimerr.iot.linkeddata.es/def/building#Building> rdf:type owl:Class ;
+                                                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :ifcIdentifier ;
+                                                                          owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                                        ] ;
                                                         rdfs:comment "The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things."@en ;
                                                         rdfs:label "Building"@en .
 
@@ -410,15 +406,13 @@ xsd:date rdf:type rdfs:Datatype .
                         owl:onProperty :monitorIndicator ;
                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                         owl:onClass :KPIValue
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :name ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
                       ] ;
       rdfs:comment "Goals or subgoals describe the objetives to be achieved within the renovation process. For instance: \"Stay within estimated budget\""@en ;
       rdfs:label "Goal"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource
-:InformationSource rdf:type owl:Class ;
-                   rdfs:comment "Represents the sources of information used to estimate the value of a parameter."@en ;
-                   rdfs:label "Information source"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue
@@ -480,10 +474,6 @@ xsd:date rdf:type rdfs:Datatype .
                       rdfs:subClassOf [ rdf:type owl:Restriction ;
                                         owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
                                         owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
-                                      ] ,
-                                      [ rdf:type owl:Restriction ;
-                                        owl:onProperty :hasSource ;
-                                        owl:minCardinality "1"^^xsd:nonNegativeInteger
                                       ] ,
                                       [ rdf:type owl:Restriction ;
                                         owl:onProperty <https://w3id.org/saref#hasValue> ;

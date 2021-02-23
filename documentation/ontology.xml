@@ -235,18 +235,6 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource -->
-
-
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource">
-        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#PerformanceParameter"/>
-        <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource"/>
-        <rdfs:comment xml:lang="en">Relates to the information source where the parameter came from.</rdfs:comment>
-        <rdfs:label xml:lang="en">has source</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal -->
 
 
@@ -591,6 +579,12 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/building#Building">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ifcIdentifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The building element comprises all elements that are primarily part of the construction of a building, i.e., its structural and space separating system. Building elements are all physically existent and tangible things.</rdfs:comment>
         <rdfs:label xml:lang="en">Building</rdfs:label>
     </owl:Class>
@@ -675,18 +669,14 @@
                 <owl:onClass rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Goals or subgoals describe the objetives to be achieved within the renovation process. For instance: &quot;Stay within estimated budget&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">Goal</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#InformationSource">
-        <rdfs:comment xml:lang="en">Represents the sources of information used to estimate the value of a parameter.</rdfs:comment>
-        <rdfs:label xml:lang="en">Information source</rdfs:label>
     </owl:Class>
     
 
@@ -781,12 +771,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/saref#isMeasuredIn"/>
                 <owl:allValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSource"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
