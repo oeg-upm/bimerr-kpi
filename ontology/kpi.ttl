@@ -389,27 +389,6 @@ building:Element rdf:type owl:Class ;
                  rdfs:label "Element"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI
-:ComfortKPI rdf:type owl:Class ;
-            rdfs:subClassOf :Kpi ;
-            rdfs:comment "KPI metric related to the residents comfort level for a building renovation project."@en ;
-            rdfs:label "Comfort Kpi"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI
-:EconomicKPI rdf:type owl:Class ;
-             rdfs:subClassOf :Kpi ;
-             rdfs:comment "KPI metric related to the economic aspects of a building renovation project."@en ;
-             rdfs:label "Economic Kpi"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI
-:EnergyKPI rdf:type owl:Class ;
-           rdfs:subClassOf :Kpi ;
-           rdfs:comment "KPI metric focused on the energy aspects of a building renovation project."@en ;
-           rdfs:label "Energy Kpi"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal
 :Goal rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -595,20 +574,6 @@ building:Element rdf:type owl:Class ;
                           ] ;
           rdfs:comment "The simluation of a building renovation work."@en ;
           rdfs:label "Scenario"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI
-:SustainabilityKPI rdf:type owl:Class ;
-                   rdfs:subClassOf :Kpi ;
-                   rdfs:comment "KPI metric focused on the sustainability of a building renovation project."@en ;
-                   rdfs:label "Sustainability Kpi"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI
-:TimeKPI rdf:type owl:Class ;
-         rdfs:subClassOf :Kpi ;
-         rdfs:comment "KPI metric related to temporal metrics for a building renovation project."@en ;
-         rdfs:label "Time Kpi"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer

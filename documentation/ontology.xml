@@ -625,39 +625,6 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"/>
-        <rdfs:comment xml:lang="en">KPI metric related to the residents comfort level for a building renovation project.</rdfs:comment>
-        <rdfs:label xml:lang="en">Comfort Kpi</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"/>
-        <rdfs:comment xml:lang="en">KPI metric related to the economic aspects of a building renovation project.</rdfs:comment>
-        <rdfs:label xml:lang="en">Economic Kpi</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"/>
-        <rdfs:comment xml:lang="en">KPI metric focused on the energy aspects of a building renovation project.</rdfs:comment>
-        <rdfs:label xml:lang="en">Energy Kpi</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal -->
 
 
@@ -939,28 +906,6 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The simluation of a building renovation work.</rdfs:comment>
         <rdfs:label xml:lang="en">Scenario</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"/>
-        <rdfs:comment xml:lang="en">KPI metric focused on the sustainability of a building renovation project.</rdfs:comment>
-        <rdfs:label xml:lang="en">Sustainability Kpi</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI -->
-
-
-    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI">
-        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"/>
-        <rdfs:comment xml:lang="en">KPI metric related to temporal metrics for a building renovation project.</rdfs:comment>
-        <rdfs:label xml:lang="en">Time Kpi</rdfs:label>
     </owl:Class>
     
 

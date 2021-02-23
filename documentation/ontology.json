@@ -568,48 +568,6 @@
     "@value" : "0.1.3"
   } ]
 }, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "KPI metric related to the residents comfort level for a building renovation project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Comfort Kpi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "KPI metric related to the economic aspects of a building renovation project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Economic Kpi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "KPI metric focused on the energy aspects of a building renovation project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Energy Kpi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"
-  } ]
-}, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -791,34 +749,6 @@
     "@id" : "_:genid37"
   }, {
     "@id" : "_:genid38"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "KPI metric focused on the sustainability of a building renovation project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Sustainability Kpi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"
-  } ]
-}, {
-  "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "KPI metric related to temporal metrics for a building renovation project."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Time Kpi"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi"
   } ]
 }, {
   "@id" : "http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address",

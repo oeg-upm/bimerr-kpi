@@ -345,24 +345,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/200
 <http://bimerr.iot.linkeddata.es/def/building#Element> <http://www.w3.org/2000/01/rdf-schema#comment> "See definition in http://bimerr.iot.linkeddata.es/def/building#Element"@en .
 <http://bimerr.iot.linkeddata.es/def/building#Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element"@en .
 # 
-# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "KPI metric related to the residents comfort level for a building renovation project."@en .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ComfortKPI> <http://www.w3.org/2000/01/rdf-schema#label> "Comfort Kpi"@en .
-# 
-# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "KPI metric related to the economic aspects of a building renovation project."@en .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EconomicKPI> <http://www.w3.org/2000/01/rdf-schema#label> "Economic Kpi"@en .
-# 
-# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "KPI metric focused on the energy aspects of a building renovation project."@en .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#EnergyKPI> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Kpi"@en .
-# 
 # http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
@@ -541,18 +523,6 @@ _:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://bimerr.iot.linkedda
 _:genid38 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario> <http://www.w3.org/2000/01/rdf-schema#comment> "The simluation of a building renovation work."@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario> <http://www.w3.org/2000/01/rdf-schema#label> "Scenario"@en .
-# 
-# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "KPI metric focused on the sustainability of a building renovation project."@en .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#SustainabilityKPI> <http://www.w3.org/2000/01/rdf-schema#label> "Sustainability Kpi"@en .
-# 
-# http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI> <http://www.w3.org/2000/01/rdf-schema#comment> "KPI metric related to temporal metrics for a building renovation project."@en .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#TimeKPI> <http://www.w3.org/2000/01/rdf-schema#label> "Time Kpi"@en .
 # 
 # http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer
 <http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
