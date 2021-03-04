@@ -707,6 +707,24 @@
                 <owl:onClass rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#maxValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#minValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Key performance indicator values calculated for a specific renovation project and scenario.</rdfs:comment>
         <rdfs:label xml:lang="en">Kpi Value</rdfs:label>
     </owl:Class>

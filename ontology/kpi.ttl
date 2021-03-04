@@ -447,6 +447,18 @@ io:InformationObject rdf:type owl:Class ;
                             owl:onProperty :assessedUnderScenario ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :Scenario
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :maxValue ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :minValue ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :tolerance ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ;
           rdfs:comment "Key performance indicator values calculated for a specific renovation project and scenario."@en ;
           rdfs:label "Kpi Value"@en .
