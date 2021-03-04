@@ -189,6 +189,18 @@
     
 
 
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation -->
+
+
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
+        <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"/>
+        <rdfs:comment xml:lang="en">Links the project with its respective documentation.</rdfs:comment>
+        <rdfs:label xml:lang="en">has documentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal -->
 
 
@@ -223,18 +235,6 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario -->
-
-
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario">
-        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
-        <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"/>
-        <rdfs:comment xml:lang="en">Relates a project with renovation scenarios.</rdfs:comment>
-        <rdfs:label xml:lang="en">has scenario</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal -->
 
 
@@ -243,17 +243,6 @@
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal"/>
         <rdfs:comment xml:lang="en">Relationship used to decompose a project goal into more specific sub-goals.</rdfs:comment>
         <rdfs:label xml:lang="en">has sub goal</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasUnit -->
-
-
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasUnit">
-        <rdfs:range rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
-        <rdfs:comment xml:lang="en">Relates an entity with a unit of measure.</rdfs:comment>
-        <rdfs:label xml:lang="en">has unit</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -270,26 +259,49 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToBuilding -->
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedBuilding -->
 
 
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToBuilding">
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedBuilding">
         <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/building#Building"/>
         <rdfs:comment xml:lang="en">Links to the building the project is about.</rdfs:comment>
-        <rdfs:label xml:lang="en">related to building</rdfs:label>
+        <rdfs:label xml:lang="en">related building</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject -->
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject -->
 
 
-    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject">
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject">
         <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"/>
         <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
         <rdfs:comment xml:lang="en">A renovation scenario is simulated within the context of a project.</rdfs:comment>
-        <rdfs:label xml:lang="en">related to project</rdfs:label>
+        <rdfs:label xml:lang="en">related project</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario -->
+
+
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
+        <rdfs:range rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario"/>
+        <rdfs:comment xml:lang="en">Relates a project with renovation scenarios.</rdfs:comment>
+        <rdfs:label xml:lang="en">related scenario</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure">
+        <rdfs:range rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+        <rdfs:comment xml:lang="en">Relates an entity with a unit of measure.</rdfs:comment>
+        <rdfs:label xml:lang="en">unit of measure</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -324,17 +336,6 @@
     
 
 
-    <!-- https://w3id.org/saref#isMeasuredIn -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/saref#isMeasuredIn">
-        <rdfs:range rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
-        <rdfs:comment xml:lang="en">Link a KPI value to a unit of measure.</rdfs:comment>
-        <rdfs:label xml:lang="en">is measured in</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -351,7 +352,32 @@
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/building#type">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">building element type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/information-objects#datatype -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/information-objects#datatype">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+        <rdfs:comment xml:lang="en">Describes the datatype of the information object.</rdfs:comment>
+        <rdfs:label xml:lang="en">datatype</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/information-objects#location -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/information-objects#location">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">Describe the location URI of the file.</rdfs:comment>
+        <rdfs:label xml:lang="en">location</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -368,46 +394,14 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address -->
-
-
-    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address">
-        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Address of a project.</rdfs:comment>
-        <rdfs:label xml:lang="en">address</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#area -->
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#area">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/building#Element"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Affected area of the building element due to a renovation measure.</rdfs:comment>
         <rdfs:label xml:lang="en">area</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate -->
-
-
-    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate">
-        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:comment xml:lang="en">The most recent editing date of a project.</rdfs:comment>
-        <rdfs:label xml:lang="en">change date</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates -->
-
-
-    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates">
-        <rdfs:label xml:lang="en">coordinates</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -416,6 +410,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#costValue">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#LayerCost"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Value of layer cost.</rdfs:comment>
         <rdfs:label xml:lang="en">cost value</rdfs:label>
@@ -423,13 +418,14 @@
     
 
 
-    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#created -->
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate -->
 
 
-    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#created">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">The date when the project was created.</rdfs:comment>
-        <rdfs:label xml:lang="en">created</rdfs:label>
+        <rdfs:label xml:lang="en">creation date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -503,6 +499,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#quantity">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="en">quantity</rdfs:label>
     </owl:DatatypeProperty>
@@ -521,10 +518,23 @@
     
 
 
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#updateDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#updateDate">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">The most recent editing date of a project.</rdfs:comment>
+        <rdfs:label xml:lang="en">update date</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://bimerr.iot.linkeddata.es/def/material-properties#position -->
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#position">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Position of the layer within the set of layers that compose a building element.</rdfs:comment>
         <rdfs:label xml:lang="en">position</rdfs:label>
@@ -536,6 +546,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#thickness">
+        <rdfs:domain rdf:resource="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Thickness of the layer.</rdfs:comment>
         <rdfs:label xml:lang="en">thickness</rdfs:label>
@@ -547,6 +558,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#type">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">material layer type</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -621,6 +633,34 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">See definition in http://bimerr.iot.linkeddata.es/def/building#Element</rdfs:comment>
         <rdfs:label xml:lang="en">Element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject -->
+
+
+    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/information-objects#datatype"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/information-objects#location"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Represent files documenting the project</rdfs:comment>
+        <rdfs:label xml:lang="en">Information object</rdfs:label>
     </owl:Class>
     
 
@@ -736,8 +776,8 @@
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#PerformanceParameter">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/saref#isMeasuredIn"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -758,7 +798,7 @@
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToBuilding"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedBuilding"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/building#Building"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -771,31 +811,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasScenario"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#address"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#description"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -807,25 +829,25 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#name"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ISO3166"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#changeDate"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#coordinates"/>
-                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#created"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#updateDate"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -853,7 +875,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasUnit"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -887,13 +909,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedToProject"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project"/>
             </owl:Restriction>
@@ -914,6 +936,12 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#name"/>
@@ -975,12 +1003,6 @@
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalDuration"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/def/saref4city#hasCalculationPeriod"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A Key Performance Indicator (KPI) is a type of performance measurement. KPIs evaluate the success of an organization or of a particular activity in which it engages. (Definition taken from FIWARE)</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/def/saref4city#"/>
         <rdfs:label xml:lang="en">Key performance indicator</rdfs:label>
@@ -1006,8 +1028,8 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/saref#isMeasuredIn"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#UnitOfMeasure"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
