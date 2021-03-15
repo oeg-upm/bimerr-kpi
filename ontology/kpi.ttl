@@ -27,7 +27,7 @@
                                                                   dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                                                   vann:preferredNamespacePrefix "kpi"@en ;
                                                                   vann:preferredNamespaceUri <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
-                                                                  owl:versionInfo "0.1.3" .
+                                                                  owl:versionInfo "0.1.4" .
 
 #################################################################
 #    Annotation properties

@@ -8,7 +8,7 @@
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "kpi"@en .
 <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> .
-<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.3" .
+<http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.4" .
 # 
 # 
 # #################################################################

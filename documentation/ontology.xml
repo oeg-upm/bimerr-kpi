@@ -19,7 +19,7 @@
         <terms:license>http://purl.org/NET/rdflicense/cc-by4.0</terms:license>
         <vann:preferredNamespacePrefix xml:lang="en">kpi</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#"/>
-        <owl:versionInfo>0.1.3</owl:versionInfo>
+        <owl:versionInfo>0.1.4</owl:versionInfo>
     </owl:Ontology>
     
 

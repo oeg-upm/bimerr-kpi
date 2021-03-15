@@ -16,7 +16,7 @@
                                                                   <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "kpi"@en ;
                                                                   <http://purl.org/vocab/vann/preferredNamespaceUri> <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
-                                                                  owl:versionInfo "0.1.3" .
+                                                                  owl:versionInfo "0.1.4" .
 
 #################################################################
 #    Annotation properties
