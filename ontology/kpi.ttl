@@ -27,7 +27,7 @@
                                                                   dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                                                   vann:preferredNamespacePrefix "kpi"@en ;
                                                                   vann:preferredNamespaceUri <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
-                                                                  owl:versionInfo "0.1.4" .
+                                                                  owl:versionInfo "0.1.5" .
 
 #################################################################
 #    Annotation properties
@@ -81,91 +81,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedElement
-:affectedElement rdf:type owl:ObjectProperty ;
-                 rdfs:domain :RenovationMeasure ;
-                 rdfs:range building:Element ;
-                 rdfs:comment "Indicates what are the building elements affected by the renovation measure."@en ;
-                 rdfs:label "affected element"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedLayer
-:affectedLayer rdf:type owl:ObjectProperty ;
-               rdfs:domain :RenovationMeasure ;
-               rdfs:range mat:MaterialLayer ;
-               rdfs:comment "Indicates what are the layers of a specific building element affected by the renovation measure."@en ;
-               rdfs:label "affected layer"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject
-:assessedUnderProject rdf:type owl:ObjectProperty ;
-                      rdfs:domain :KPIValue ;
-                      rdfs:range :Project ;
-                      rdfs:comment "A KPI value is assessed within the context of a project."@en ;
-                      rdfs:label "assessed under project"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario
-:assessedUnderScenario rdf:type owl:ObjectProperty ;
-                       rdfs:domain :KPIValue ;
-                       rdfs:range :Scenario ;
-                       rdfs:comment "A KPI value is assessed within the context of a scenario."@en ;
-                       rdfs:label "assessed under scenario"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter
-:basedOnParameter rdf:type owl:ObjectProperty ;
-                  rdfs:range :PerformanceParameter ;
-                  rdfs:comment "Links to the parameter used to compute a KPI value."@en ;
-                  rdfs:label "based on parameter"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation
-:hasDocumentation rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Project ;
-                  rdfs:range io:InformationObject ;
-                  rdfs:comment "Links the project with its respective documentation."@en ;
-                  rdfs:label "has documentation"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal
-:hasGoal rdf:type owl:ObjectProperty ;
-         rdfs:domain :Project ;
-         rdfs:range :Goal ;
-         rdfs:comment "Link to link a project with a set of goals."@en ;
-         rdfs:label "has goal"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPI
-:hasKPI rdf:type owl:ObjectProperty ;
-        rdfs:range :Kpi ;
-        rdfs:label "has Kpi"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPIValue
-:hasKPIValue rdf:type owl:ObjectProperty ;
-             rdfs:domain :Kpi ;
-             rdfs:range :KPIValue ;
-             rdfs:comment "Relates a KPI definition with their values."@en ;
-             rdfs:label "has Kpi value"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal
-:hasSubGoal rdf:type owl:ObjectProperty ;
-            rdfs:domain :Goal ;
-            rdfs:range :Goal ;
-            rdfs:comment "Relationship used to decompose a project goal into more specific sub-goals."@en ;
-            rdfs:label "has sub goal"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator
-:monitorIndicator rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Goal ;
-                  rdfs:range :KPIValue ;
-                  rdfs:comment "A goal need to monitor a set of KPI values, to verify its accomplishment."@en ;
-                  rdfs:label "monitor indicator"@en .
-
-
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedBuilding
 :relatedBuilding rdf:type owl:ObjectProperty ;
                  rdfs:domain :Project ;
@@ -174,20 +89,96 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "related building"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedDocumentation
+:relatedDocumentation rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Project ;
+                      rdfs:range io:InformationObject ;
+                      rdfs:comment "Links the project with its respective documentation."@en ;
+                      rdfs:label "related documentation"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedElement
+:relatedElement rdf:type owl:ObjectProperty ;
+                rdfs:domain :RenovationMeasure ;
+                rdfs:range building:Element ;
+                rdfs:comment "Indicates what are the building elements affected by the renovation measure."@en ;
+                rdfs:label "related element"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedGoal
+:relatedGoal rdf:type owl:ObjectProperty ;
+             rdfs:domain :Project ;
+             rdfs:range :Goal ;
+             rdfs:comment "Link to link a project with a set of goals."@en ;
+             rdfs:label "related goal"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPI
+:relatedKPI rdf:type owl:ObjectProperty ;
+            rdfs:range :Kpi ;
+            rdfs:comment "relates an entity with specific kpi definitions."@en ;
+            rdfs:label "related Kpi"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue
+:relatedKPIValue rdf:type owl:ObjectProperty ;
+                 rdfs:range :KPIValue ;
+                 rdfs:comment "Relates an entity with specific kpi values."@en ;
+                 rdfs:label "related Kpi value"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedLayer
+:relatedLayer rdf:type owl:ObjectProperty ;
+              rdfs:domain :RenovationMeasure ;
+              rdfs:range mat:MaterialLayer ;
+              rdfs:comment "Indicates what are the layers of a specific building element affected by the renovation measure."@en ;
+              rdfs:label "related layer"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMaterialLayerCost
+:relatedMaterialLayerCost rdf:type owl:ObjectProperty ;
+                          rdfs:domain mat:MaterialLayer ;
+                          rdfs:range :LayerCost ;
+                          rdfs:comment "Related cost to the material layer."@en ;
+                          rdfs:label "related material layer cost"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMeasure
+:relatedMeasure rdf:type owl:ObjectProperty ;
+                rdfs:domain :Scenario ;
+                rdfs:range :RenovationMeasure ;
+                rdfs:comment "Relates an scenario with the renovation measures to be taken."@en ;
+                rdfs:label "related measure"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedParameter
+:relatedParameter rdf:type owl:ObjectProperty ;
+                  rdfs:domain :KPIValue ;
+                  rdfs:range :PerformanceParameter ;
+                  rdfs:comment "Links a KPI value with the parameters used for its calculation."@en ;
+                  rdfs:label "related parameter"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject
 :relatedProject rdf:type owl:ObjectProperty ;
-                rdfs:domain :Scenario ;
                 rdfs:range :Project ;
-                rdfs:comment "A renovation scenario is simulated within the context of a project."@en ;
+                rdfs:comment "Relates an entity with a project."@en ;
                 rdfs:label "related project"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario
 :relatedScenario rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Project ;
                  rdfs:range :Scenario ;
-                 rdfs:comment "Relates a project with renovation scenarios."@en ;
+                 rdfs:comment "Relates an entity with a renovation scenario."@en ;
                  rdfs:label "related scenario"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedSubGoal
+:relatedSubGoal rdf:type owl:ObjectProperty ;
+                rdfs:domain :Goal ;
+                rdfs:range :Goal ;
+                rdfs:comment "Relationship used to decompose a project goal into more specific sub-goals."@en ;
+                rdfs:label "related sub goal"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure
@@ -225,12 +216,12 @@ building:type rdf:type owl:DatatypeProperty ;
               rdfs:label "building element type"@en .
 
 
-###  http://bimerr.iot.linkeddata.es/def/information-objects#datatype
-io:datatype rdf:type owl:DatatypeProperty ;
-            rdfs:domain io:InformationObject ;
-            rdfs:range xsd:base64Binary ;
-            rdfs:comment "Describes the datatype of the information object."@en ;
-            rdfs:label "datatype"@en .
+###  http://bimerr.iot.linkeddata.es/def/information-objects#format
+io:format rdf:type owl:DatatypeProperty ;
+          rdfs:domain io:InformationObject ;
+          rdfs:range xsd:base64Binary ;
+          rdfs:comment "Describes the format of the information object."@en ;
+          rdfs:label "format"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/information-objects#location
@@ -239,14 +230,6 @@ io:location rdf:type owl:DatatypeProperty ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "Describe the location URI of the file."@en ;
             rdfs:label "location"@en .
-
-
-###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ISO3166
-:ISO3166 rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Project ;
-         rdfs:range xsd:string ;
-         rdfs:comment "The ISO country code where the project is being developed."@en ;
-         rdfs:label "ISO 3166"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#area
@@ -263,6 +246,14 @@ io:location rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:float ;
            rdfs:comment "Value of layer cost."@en ;
            rdfs:label "cost value"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#countryCode
+:countryCode rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Project ;
+             rdfs:range xsd:string ;
+             rdfs:comment "The ISO country code where the project is being developed."@en ;
+             rdfs:label "country code"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate
@@ -318,6 +309,7 @@ io:location rdf:type owl:DatatypeProperty ;
 :quantity rdf:type owl:DatatypeProperty ;
           rdfs:domain :RenovationMeasure ;
           rdfs:range xsd:float ;
+          rdfs:comment "Quantity of the renovation measure." ;
           rdfs:label "quantity"@en .
 
 
@@ -398,18 +390,22 @@ building:Element rdf:type owl:Class ;
                                    owl:onProperty :name ;
                                    owl:cardinality "1"^^xsd:nonNegativeInteger
                                  ] ;
-                 rdfs:comment "See definition in http://bimerr.iot.linkeddata.es/def/building#Element"@en ;
+                 rdfs:comment "An element is a generalization of all components that make up an AEC product."@en ;
                  rdfs:label "Element"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject
 io:InformationObject rdf:type owl:Class ;
                      rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                       owl:onProperty io:datatype ;
+                                       owl:onProperty io:format ;
                                        owl:cardinality "1"^^xsd:nonNegativeInteger
                                      ] ,
                                      [ rdf:type owl:Restriction ;
                                        owl:onProperty io:location ;
+                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :description ;
                                        owl:cardinality "1"^^xsd:nonNegativeInteger
                                      ] ,
                                      [ rdf:type owl:Restriction ;
@@ -423,9 +419,8 @@ io:InformationObject rdf:type owl:Class ;
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal
 :Goal rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                        owl:onProperty :monitorIndicator ;
-                        owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                        owl:onClass :KPIValue
+                        owl:onProperty :relatedSubGoal ;
+                        owl:allValuesFrom :Goal
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :name ;
@@ -439,14 +434,16 @@ io:InformationObject rdf:type owl:Class ;
 :KPIValue rdf:type owl:Class ;
           rdfs:subClassOf s4city:KeyPerformanceIndicatorAssessment ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :assessedUnderProject ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :Project
+                            owl:onProperty :relatedParameter ;
+                            owl:allValuesFrom :PerformanceParameter
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :assessedUnderScenario ;
-                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                            owl:onClass :Scenario
+                            owl:onProperty :relatedProject ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :relatedScenario ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :maxValue ;
@@ -468,7 +465,7 @@ io:InformationObject rdf:type owl:Class ;
 :Kpi rdf:type owl:Class ;
      rdfs:subClassOf s4city:KeyPerformanceIndicator ,
                      [ rdf:type owl:Restriction ;
-                       owl:onProperty :hasKPIValue ;
+                       owl:onProperty :relatedKPIValue ;
                        owl:minCardinality "1"^^xsd:nonNegativeInteger
                      ] ,
                      [ rdf:type owl:Restriction ;
@@ -522,9 +519,12 @@ io:InformationObject rdf:type owl:Class ;
                            owl:allValuesFrom building:Building
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasGoal ;
-                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                           owl:onClass :Goal
+                           owl:onProperty :relatedDocumentation ;
+                           owl:allValuesFrom io:InformationObject
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :relatedGoal ;
+                           owl:allValuesFrom :Goal
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :relatedScenario ;
@@ -543,7 +543,7 @@ io:InformationObject rdf:type owl:Class ;
                            owl:cardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :ISO3166 ;
+                           owl:onProperty :countryCode ;
                            owl:maxCardinality "1"^^xsd:nonNegativeInteger
                          ] ,
                          [ rdf:type owl:Restriction ;
@@ -561,11 +561,15 @@ io:InformationObject rdf:type owl:Class ;
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure
 :RenovationMeasure rdf:type owl:Class ;
                    rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                     owl:onProperty :hasKPI ;
+                                     owl:onProperty :relatedKPI ;
                                      owl:allValuesFrom :Kpi
                                    ] ,
                                    [ rdf:type owl:Restriction ;
-                                     owl:onProperty :affectedElement ;
+                                     owl:onProperty :relatedElement ;
+                                     owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :relatedLayer ;
                                      owl:minCardinality "1"^^xsd:nonNegativeInteger
                                    ] ,
                                    [ rdf:type owl:Restriction ;
@@ -587,12 +591,12 @@ io:InformationObject rdf:type owl:Class ;
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario
 :Scenario rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                            owl:onProperty :hasKPI ;
+                            owl:onProperty :relatedKPI ;
                             owl:allValuesFrom :Kpi
                           ] ,
                           [ rdf:type owl:Restriction ;
-                            owl:onProperty :relatedProject ;
-                            owl:allValuesFrom :Project
+                            owl:onProperty :relatedMeasure ;
+                            owl:minCardinality "1"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :relatedProject ;
@@ -610,6 +614,10 @@ io:InformationObject rdf:type owl:Class ;
 ###  http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer
 mat:MaterialLayer rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                    owl:onProperty :relatedMaterialLayerCost ;
+                                    owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty :unitOfMeasure ;
                                     owl:cardinality "1"^^xsd:nonNegativeInteger
                                   ] ,
@@ -629,7 +637,7 @@ mat:MaterialLayer rdf:type owl:Class ;
                                     owl:onProperty mat:type ;
                                     owl:cardinality "1"^^xsd:nonNegativeInteger
                                   ] ;
-                  rdfs:comment "See definition in http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"@en ;
+                  rdfs:comment "A single and identifiable part of an element which is constructed of a number of layers (one or more)."@en ;
                   rdfs:label "Material layer"@en .
 
 
@@ -673,7 +681,7 @@ s4city:KeyPerformanceIndicatorAssessment rdf:type owl:Class ;
                                                          ] ,
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty saref:hasValue ;
-                                                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                           owl:cardinality "1"^^xsd:nonNegativeInteger
                                                          ] ;
                                          rdfs:comment "A Key Performance Indicator assessment represents the assessment of a KPI calculated by a given agent in a given time."@en ;
                                          rdfs:isDefinedBy s4city: ;

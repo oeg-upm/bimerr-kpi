@@ -98,7 +98,7 @@ This section provides details for each class and property defined by Key Perform
       <p>
          <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/building#Element</p>
       <div class="comment">
-         <span class="markdown">See definition in http://bimerr.iot.linkeddata.es/def/building#Element</span>
+         <span class="markdown">An element is a generalization of all components that make up an AEC product.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -111,8 +111,8 @@ This section provides details for each class and property defined by Key Perform
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#affectedElement"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedElement">affected element</a>
+            <a href="#relatedElement"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedElement">related element</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -132,18 +132,16 @@ This section provides details for each class and property defined by Key Perform
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasSubGoal"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal">has sub goal</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#monitorIndicator"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator">monitor indicator</a>
+            <a href="#relatedSubGoal"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedSubGoal">related sub goal</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasGoal"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal">has goal</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasSubGoal"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal">has sub goal</a>
+            <a href="#relatedGoal"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedGoal">related goal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatedSubGoal"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedSubGoal">related sub goal</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -163,16 +161,16 @@ This section provides details for each class and property defined by Key Perform
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#datatype"
-               title="http://bimerr.iot.linkeddata.es/def/information-objects#datatype">datatype</a>
+            <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#format"
+               title="http://bimerr.iot.linkeddata.es/def/information-objects#format">format</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#location"
                title="http://bimerr.iot.linkeddata.es/def/information-objects#location">location</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasDocumentation"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation">has documentation</a>
+            <a href="#relatedDocumentation"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedDocumentation">related documentation</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -248,16 +246,10 @@ This section provides details for each class and property defined by Key Perform
                title="https://w3id.org/def/saref4city#KeyPerformanceIndicator">Key performance indicator</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#hasKPIValue"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPIValue">has Kpi value</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasKPI"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPI">has Kpi</a>
+            <a href="#relatedKPI"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPI">related Kpi</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -281,24 +273,20 @@ This section provides details for each class and property defined by Key Perform
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#assessedUnderProject"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject">assessed under project</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#assessedUnderScenario"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario">assessed under scenario</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#maxValue"
+            <a href="#maxValue"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#maxValue">max value</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#minValue"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#minValue">min value</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#tolerance"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedParameter"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedParameter">related parameter</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#tolerance"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance">tolerance</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasKPIValue"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPIValue">has Kpi value</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#monitorIndicator"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator">monitor indicator</a>
+            <a href="#relatedKPIValue"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue">related Kpi value</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -322,6 +310,12 @@ This section provides details for each class and property defined by Key Perform
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#costValue">cost value</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#relatedMaterialLayerCost"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMaterialLayerCost">related material layer cost</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer">
@@ -332,7 +326,7 @@ This section provides details for each class and property defined by Key Perform
       <p>
          <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer</p>
       <div class="comment">
-         <span class="markdown">See definition in http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer</span>
+         <span class="markdown">A single and identifiable part of an element which is constructed of a number of layers (one or more).</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -341,14 +335,16 @@ This section provides details for each class and property defined by Key Perform
          <dd>
             <a href="#http://bimerr.iot.linkeddata.es/def/material-properties#position"
                title="http://bimerr.iot.linkeddata.es/def/material-properties#position">position</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://bimerr.iot.linkeddata.es/def/material-properties#thickness"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedMaterialLayerCost"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMaterialLayerCost">related material layer cost</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://bimerr.iot.linkeddata.es/def/material-properties#thickness"
                title="http://bimerr.iot.linkeddata.es/def/material-properties#thickness">thickness</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#affectedLayer"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedLayer">affected layer</a>
+            <a href="#relatedLayer"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedLayer">related layer</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -368,8 +364,8 @@ This section provides details for each class and property defined by Key Perform
          <dd/>
          <dt>is in range of</dt>
          <dd>
-            <a href="#basedOnParameter"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter">based on parameter</a>
+            <a href="#relatedParameter"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedParameter">related parameter</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -389,27 +385,23 @@ This section provides details for each class and property defined by Key Perform
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#ISO3166"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ISO3166">ISO 3166</a>
+            <a href="#countryCode"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#countryCode">country code</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#creationDate"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate">creation date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDocumentation"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation">has documentation</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasGoal"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal">has goal</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#relatedBuilding"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedBuilding"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedBuilding">related building</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#relatedScenario"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario">related scenario</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatedDocumentation"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedDocumentation">related documentation</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatedGoal"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedGoal">related goal</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#updateDate"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#updateDate">update date</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#assessedUnderProject"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject">assessed under project</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#relatedProject"
+            <a href="#relatedProject"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject">related project</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -430,13 +422,19 @@ This section provides details for each class and property defined by Key Perform
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#affectedElement"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedElement">affected element</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#affectedLayer"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedLayer">affected layer</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#quantity"
+            <a href="#quantity"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#quantity">quantity</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#relatedElement"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedElement">related element</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatedLayer"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedLayer">related layer</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#relatedMeasure"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMeasure">related measure</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -455,15 +453,13 @@ This section provides details for each class and property defined by Key Perform
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#relatedProject"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject">related project</a>
+            <a href="#relatedMeasure"
+               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMeasure">related measure</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#assessedUnderScenario"
-               title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario">assessed under scenario</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#relatedScenario"
+            <a href="#relatedScenario"
                title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario">related scenario</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -528,52 +524,8 @@ This section provides details for each class and property defined by Key Perform
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#affectedElement"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedElement">affected element</a>
-      </li>
-      <li>
-         <a href="#affectedLayer"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedLayer">affected layer</a>
-      </li>
-      <li>
-         <a href="#assessedUnderProject"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject">assessed under project</a>
-      </li>
-      <li>
-         <a href="#assessedUnderScenario"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario">assessed under scenario</a>
-      </li>
-      <li>
-         <a href="#basedOnParameter"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter">based on parameter</a>
-      </li>
-      <li>
          <a href="#https://w3id.org/def/saref4city#hasCalculationPeriod"
             title="https://w3id.org/def/saref4city#hasCalculationPeriod">has calculation period</a>
-      </li>
-      <li>
-         <a href="#hasDocumentation"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation">has documentation</a>
-      </li>
-      <li>
-         <a href="#hasGoal"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal">has goal</a>
-      </li>
-      <li>
-         <a href="#hasKPI"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPI">has Kpi</a>
-      </li>
-      <li>
-         <a href="#hasKPIValue"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPIValue">has Kpi value</a>
-      </li>
-      <li>
-         <a href="#hasSubGoal"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal">has sub goal</a>
-      </li>
-      <li>
-         <a href="#monitorIndicator"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator">monitor indicator</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/saref4city#quantifiesKPI" title="https://w3id.org/def/saref4city#quantifiesKPI">quantify Kpi</a>
@@ -586,6 +538,42 @@ This section provides details for each class and property defined by Key Perform
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedBuilding">related building</a>
       </li>
       <li>
+         <a href="#relatedDocumentation"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedDocumentation">related documentation</a>
+      </li>
+      <li>
+         <a href="#relatedElement"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedElement">related element</a>
+      </li>
+      <li>
+         <a href="#relatedGoal"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedGoal">related goal</a>
+      </li>
+      <li>
+         <a href="#relatedKPI"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPI">related Kpi</a>
+      </li>
+      <li>
+         <a href="#relatedKPIValue"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue">related Kpi value</a>
+      </li>
+      <li>
+         <a href="#relatedLayer"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedLayer">related layer</a>
+      </li>
+      <li>
+         <a href="#relatedMaterialLayerCost"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMaterialLayerCost">related material layer cost</a>
+      </li>
+      <li>
+         <a href="#relatedMeasure"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMeasure">related measure</a>
+      </li>
+      <li>
+         <a href="#relatedParameter"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedParameter">related parameter</a>
+      </li>
+      <li>
          <a href="#relatedProject"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject">related project</a>
       </li>
@@ -594,139 +582,14 @@ This section provides details for each class and property defined by Key Perform
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario">related scenario</a>
       </li>
       <li>
+         <a href="#relatedSubGoal"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedSubGoal">related sub goal</a>
+      </li>
+      <li>
          <a href="#unitOfMeasure"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure">unit of measure</a>
       </li>
    </ul>
-   <div class="entity" id="affectedElement">
-      <h3>affected element<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedElement</p>
-      <div class="comment">
-         <span class="markdown">Indicates what are the building elements affected by the renovation measure.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#RenovationMeasure"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure">Renovation measure</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://bimerr.iot.linkeddata.es/def/building#Element"
-                  title="http://bimerr.iot.linkeddata.es/def/building#Element">Element</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="affectedLayer">
-      <h3>affected layer<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#affectedLayer</p>
-      <div class="comment">
-         <span class="markdown">Indicates what are the layers of a specific building element affected by the renovation measure.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#RenovationMeasure"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure">Renovation measure</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"
-                  title="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer">Material layer</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="assessedUnderProject">
-      <h3>assessed under project<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderProject</p>
-      <div class="comment">
-         <span class="markdown">A KPI value is assessed within the context of a project.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#KPIValue"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue">Kpi Value</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Project"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="assessedUnderScenario">
-      <h3>assessed under scenario<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#assessedUnderScenario</p>
-      <div class="comment">
-         <span class="markdown">A KPI value is assessed within the context of a scenario.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#KPIValue"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue">Kpi Value</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Scenario"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario">Scenario</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="basedOnParameter">
-      <h3>based on parameter<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#basedOnParameter</p>
-      <div class="comment">
-         <span class="markdown">Links to the parameter used to compute a KPI value.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="#PerformanceParameter"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#PerformanceParameter">Performance parameter</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="https://w3id.org/def/saref4city#hasCalculationPeriod">
       <h3>has calculation period<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -736,159 +599,6 @@ This section provides details for each class and property defined by Key Perform
          <strong>IRI:</strong> https://w3id.org/def/saref4city#hasCalculationPeriod</p>
       <div class="comment">
          <span class="markdown">Indicates the calculation period of a KPI.</span>
-      </div>
-   </div>
-   <div class="entity" id="hasDocumentation">
-      <h3>has documentation<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasDocumentation</p>
-      <div class="comment">
-         <span class="markdown">Links the project with its respective documentation.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Project"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"
-                  title="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject">Information object</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasGoal">
-      <h3>has goal<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasGoal</p>
-      <div class="comment">
-         <span class="markdown">Link to link a project with a set of goals.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Project"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Goal"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasKPI">
-      <h3>has Kpi<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPI</p>
-      <div class="description">
-         <dl>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Kpi"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi">Kpi</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasKPIValue">
-      <h3>has Kpi value<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasKPIValue</p>
-      <div class="comment">
-         <span class="markdown">Relates a KPI definition with their values.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Kpi"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi">Kpi</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#KPIValue"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue">Kpi Value</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasSubGoal">
-      <h3>has sub goal<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#hasSubGoal</p>
-      <div class="comment">
-         <span class="markdown">Relationship used to decompose a project goal into more specific sub-goals.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Goal"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Goal"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="monitorIndicator">
-      <h3>monitor indicator<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#monitorIndicator</p>
-      <div class="comment">
-         <span class="markdown">A goal need to monitor a set of KPI values, to verify its accomplishment.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Goal"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#KPIValue"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue">Kpi Value</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
       </div>
    </div>
    <div class="entity" id="https://w3id.org/def/saref4city#quantifiesKPI">
@@ -940,15 +650,192 @@ This section provides details for each class and property defined by Key Perform
          </dl>
       </div>
    </div>
-   <div class="entity" id="relatedProject">
-      <h3>related project<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="relatedDocumentation">
+      <h3>related documentation<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject</p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedDocumentation</p>
       <div class="comment">
-         <span class="markdown">A renovation scenario is simulated within the context of a project.</span>
+         <span class="markdown">Links the project with its respective documentation.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Project"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"
+                  title="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject">Information object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedElement">
+      <h3>related element<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedElement</p>
+      <div class="comment">
+         <span class="markdown">Indicates what are the building elements affected by the renovation measure.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RenovationMeasure"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure">Renovation measure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://bimerr.iot.linkeddata.es/def/building#Element"
+                  title="http://bimerr.iot.linkeddata.es/def/building#Element">Element</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedGoal">
+      <h3>related goal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedGoal</p>
+      <div class="comment">
+         <span class="markdown">Link to link a project with a set of goals.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Project"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Goal"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedKPI">
+      <h3>related Kpi<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPI</p>
+      <div class="comment">
+         <span class="markdown">relates an entity with specific kpi definitions.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Kpi"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Kpi">Kpi</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedKPIValue">
+      <h3>related Kpi value<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue</p>
+      <div class="comment">
+         <span class="markdown">Relates an entity with specific kpi values.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#KPIValue"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue">Kpi Value</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedLayer">
+      <h3>related layer<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedLayer</p>
+      <div class="comment">
+         <span class="markdown">Indicates what are the layers of a specific building element affected by the renovation measure.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#RenovationMeasure"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure">Renovation measure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer">Material layer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedMaterialLayerCost">
+      <h3>related material layer cost<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMaterialLayerCost</p>
+      <div class="comment">
+         <span class="markdown">Related cost to the material layer.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer"
+                  title="http://bimerr.iot.linkeddata.es/def/material-properties#MaterialLayer">Material layer</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LayerCost"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#LayerCost">Laye cost</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedMeasure">
+      <h3>related measure<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedMeasure</p>
+      <div class="comment">
+         <span class="markdown">Relates an scenario with the renovation measures to be taken.</span>
       </div>
       <div class="description">
          <dl>
@@ -958,6 +845,54 @@ This section provides details for each class and property defined by Key Perform
                   title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario">Scenario</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#RenovationMeasure"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#RenovationMeasure">Renovation measure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedParameter">
+      <h3>related parameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedParameter</p>
+      <div class="comment">
+         <span class="markdown">Links a KPI value with the parameters used for its calculation.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#KPIValue"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue">Kpi Value</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PerformanceParameter"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#PerformanceParameter">Performance parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedProject">
+      <h3>related project<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedProject</p>
+      <div class="comment">
+         <span class="markdown">Relates an entity with a project.</span>
+      </div>
+      <div class="description">
+         <dl>
             <dt>has range</dt>
             <dd>
                <a href="#Project"
@@ -975,20 +910,41 @@ This section provides details for each class and property defined by Key Perform
       <p>
          <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedScenario</p>
       <div class="comment">
-         <span class="markdown">Relates a project with renovation scenarios.</span>
+         <span class="markdown">Relates an entity with a renovation scenario.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Scenario"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario">Scenario</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedSubGoal">
+      <h3>related sub goal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedSubGoal</p>
+      <div class="comment">
+         <span class="markdown">Relationship used to decompose a project goal into more specific sub-goals.</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Project"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
+               <a href="#Goal"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Scenario"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Scenario">Scenario</a>
+               <a href="#Goal"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">Goal</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1030,16 +986,20 @@ This section provides details for each class and property defined by Key Perform
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#costValue">cost value</a>
       </li>
       <li>
+         <a href="#countryCode"
+            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#countryCode">country code</a>
+      </li>
+      <li>
          <a href="#creationDate"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate">creation date</a>
       </li>
       <li>
-         <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#datatype"
-            title="http://bimerr.iot.linkeddata.es/def/information-objects#datatype">datatype</a>
-      </li>
-      <li>
          <a href="#description"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#description">description</a>
+      </li>
+      <li>
+         <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#format"
+            title="http://bimerr.iot.linkeddata.es/def/information-objects#format">format</a>
       </li>
       <li>
          <a href="#https://w3id.org/saref#hasValue" title="https://w3id.org/saref#hasValue">has value</a>
@@ -1051,10 +1011,6 @@ This section provides details for each class and property defined by Key Perform
       <li>
          <a href="#ifcIdentifier"
             title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ifcIdentifier">ifc identifier</a>
-      </li>
-      <li>
-         <a href="#ISO3166"
-            title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ISO3166">ISO 3166</a>
       </li>
       <li>
          <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#location"
@@ -1163,6 +1119,31 @@ This section provides details for each class and property defined by Key Perform
          </dl>
       </div>
    </div>
+   <div class="entity" id="countryCode">
+      <h3>country code<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#countryCode</p>
+      <div class="comment">
+         <span class="markdown">The ISO country code where the project is being developed.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Project"
+                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="creationDate">
       <h3>creation date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1188,31 +1169,6 @@ This section provides details for each class and property defined by Key Perform
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://bimerr.iot.linkeddata.es/def/information-objects#datatype">
-      <h3>datatype<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/information-objects#datatype</p>
-      <div class="comment">
-         <span class="markdown">Describes the datatype of the information object.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"
-                  title="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject">Information object</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#base64Binary">base64 binary</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="description">
       <h3>description<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1225,6 +1181,31 @@ This section provides details for each class and property defined by Key Perform
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://bimerr.iot.linkeddata.es/def/information-objects#format">
+      <h3>format<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/information-objects#format</p>
+      <div class="comment">
+         <span class="markdown">Describes the format of the information object.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject"
+                  title="http://bimerr.iot.linkeddata.es/def/information-objects#InformationObject">Information object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#base64Binary">base64 binary</span>
             </dd>
          </dl>
       </div>
@@ -1276,31 +1257,6 @@ This section provides details for each class and property defined by Key Perform
       </div>
       <div class="description">
          <dl>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="ISO3166">
-      <h3>ISO 3166<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#ISO3166</p>
-      <div class="comment">
-         <span class="markdown">The ISO country code where the project is being developed.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Project"
-                  title="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Project">Project</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
@@ -1447,6 +1403,9 @@ This section provides details for each class and property defined by Key Perform
       </h3>
       <p>
          <strong>IRI:</strong> http://bimerr.iot.linkeddata.es/def/key-performance-indicator#quantity</p>
+      <div class="comment">
+         <span class="markdown">Quantity of the renovation measure.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
