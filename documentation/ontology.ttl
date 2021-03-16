@@ -408,6 +408,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal
 :Goal rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :relatedKPIValue ;
+                        owl:allValuesFrom :KPIValue
+                      ] ,
+                      [ rdf:type owl:Restriction ;
                         owl:onProperty :relatedSubGoal ;
                         owl:allValuesFrom :Goal
                       ] ,

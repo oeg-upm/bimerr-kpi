@@ -665,6 +665,12 @@
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedKPIValue"/>
+                <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#KPIValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relatedSubGoal"/>
                 <owl:allValuesFrom rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#Goal"/>
             </owl:Restriction>
