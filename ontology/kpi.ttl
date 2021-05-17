@@ -22,12 +22,11 @@
                                                                   <http://purl.org/dc/elements/1.1/creator> "María Poveda Villalón" ,
                                                                                                             "Serge Chávez Feria" ;
                                                                   <http://purl.org/dc/elements/1.1/description> "The Key Performance Indicator module aims to model the metrics defined at the beginning of building renovation activities to monitor the conformance with typical requirements related to energy efficient buildings."@en ;
-                                                                  <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
                                                                   <http://purl.org/dc/elements/1.1/title> "Key Performance Indicator ontology"@en ;
                                                                   dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                                                   vann:preferredNamespacePrefix "kpi"@en ;
                                                                   vann:preferredNamespaceUri <http://bimerr.iot.linkeddata.es/def/key-performance-indicator#> ;
-                                                                  owl:versionInfo "0.1.5" .
+                                                                  owl:versionInfo "0.1.6" .
 
 #################################################################
 #    Annotation properties
@@ -43,10 +42,6 @@
 
 ###  http://purl.org/dc/elements/1.1/description
 <http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/elements/1.1/publisher
-<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/elements/1.1/title
@@ -232,6 +227,12 @@ io:location rdf:type owl:DatatypeProperty ;
             rdfs:label "location"@en .
 
 
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#absoluteDeviation
+:absoluteDeviation rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:double ;
+                   rdfs:label "absolute deviation"@en .
+
+
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#area
 :area rdf:type owl:DatatypeProperty ;
       rdfs:domain building:Element ;
@@ -311,6 +312,12 @@ io:location rdf:type owl:DatatypeProperty ;
           rdfs:range xsd:float ;
           rdfs:comment "Quantity of the renovation measure." ;
           rdfs:label "quantity"@en .
+
+
+###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relativeDeviation
+:relativeDeviation rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:double ;
+                   rdfs:label "relative deviation"@en .
 
 
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#tolerance
@@ -450,11 +457,19 @@ io:InformationObject rdf:type owl:Class ;
                             owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty :absoluteDeviation ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty :maxValue ;
                             owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :minValue ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :relativeDeviation ;
                             owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
@@ -491,6 +506,10 @@ io:InformationObject rdf:type owl:Class ;
 ###  http://bimerr.iot.linkeddata.es/def/key-performance-indicator#LayerCost
 :LayerCost rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :unitOfMeasure ;
+                             owl:cardinality "1"^^xsd:nonNegativeInteger
+                           ] ,
+                           [ rdf:type owl:Restriction ;
                              owl:onProperty :costValue ;
                              owl:cardinality "1"^^xsd:nonNegativeInteger
                            ] ,
@@ -606,6 +625,10 @@ io:InformationObject rdf:type owl:Class ;
                             owl:onProperty :relatedProject ;
                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                             owl:onClass :Project
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :creationDate ;
+                            owl:cardinality "1"^^xsd:nonNegativeInteger
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :identifier ;

@@ -14,12 +14,11 @@
         <dc:creator>María Poveda Villalón</dc:creator>
         <dc:creator>Serge Chávez Feria</dc:creator>
         <dc:description xml:lang="en">The Key Performance Indicator module aims to model the metrics defined at the beginning of building renovation activities to monitor the conformance with typical requirements related to energy efficient buildings.</dc:description>
-        <dc:publisher>http://www.oeg-upm.net/</dc:publisher>
         <dc:title xml:lang="en">Key Performance Indicator ontology</dc:title>
         <terms:license>http://purl.org/NET/rdflicense/cc-by4.0</terms:license>
         <vann:preferredNamespacePrefix xml:lang="en">kpi</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#"/>
-        <owl:versionInfo>0.1.5</owl:versionInfo>
+        <owl:versionInfo>0.1.6</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -54,13 +53,6 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/publisher -->
-
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
     
 
 
@@ -369,6 +361,16 @@
     
 
 
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#absoluteDeviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#absoluteDeviation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">absolute deviation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#area -->
 
 
@@ -490,6 +492,16 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment>Quantity of the renovation measure.</rdfs:comment>
         <rdfs:label xml:lang="en">quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relativeDeviation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relativeDeviation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label xml:lang="en">relative deviation</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -712,6 +724,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#absoluteDeviation"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#maxValue"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
@@ -719,6 +737,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#minValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#relativeDeviation"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -773,6 +797,12 @@
 
 
     <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#LayerCost">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#unitOfMeasure"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#costValue"/>
@@ -954,6 +984,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#creationDate"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/key-performance-indicator#identifier"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
@@ -1101,6 +1137,6 @@
 
 
 
-<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
 
 
