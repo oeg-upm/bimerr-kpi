@@ -1,0 +1,7 @@
+Concept,Relation,Description,"Value type expected
+(integer, boolean, float, list of specific values, etc.)",Min Cardinality,Max cardinality,"Unit of measure
+(if applicable)"
+KPI_value,KPI_value_has_KPI,,KPI,1,1,
+,KPI_value_has_Project,,Project,1,1,
+,KPI_value_has_Scenario,,Scenario,1,1,
+Scenario,Scenario_has_ProjectID,,Project,1,1,

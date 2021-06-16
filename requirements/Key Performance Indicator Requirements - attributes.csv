@@ -1,0 +1,16 @@
+Concept,Attribute,Description,"Value type expected
+(integer, boolean, float, list of specific values, etc.)",Min Cardinality,Max cardinality,"Unit of measure
+(if applicable)"
+KPI,ID,,string,1,1,
+,Name,,string,1,1,
+,Unit,,string,1,1,
+,Category,,"(Economic, Energy, Sustainability, Comfort)",1,1,
+,Comment,,string,0,1,
+KPI_Value,Value,,usually one float but can also be a list of values in case of load profiles,1,*,
+Project,ProjectID,,string,1,1,
+,Name,,string,1,1,
+,Address,,string,1,1,
+,Coordinates,,string,0,1,
+,Change Date,,date,0,1,
+Scenario,ScenarioID,,string,1,1,
+,Name,,string,1,1,
