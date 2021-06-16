@@ -94,7 +94,7 @@ The following table shows the ORSD (Ontological Requirements Specification Docum
   </tr>
   <tr>
     <td style="width:5%"></td>
-    <td>The whole set of functional requirements is located <a href="https://github.com/oeg-upm/bimerr-key-performance-indicators/blob/master/requirements">here</a> </td>
+    <td>The whole set of functional requirements is located <a href="https://github.com/oeg-upm/bimerr-kpi/blob/master/requirements">here</a> </td>
   </tr>
   
 
